@@ -1,0 +1,8 @@
+Key,File,Type,english
+carsRandomRespawner,blocks,block,Random Car Respawner
+busRandomHelper,blocks,block,Random Bus Helper
+serviceTrucksRandomHelper,blocks,block,Random Service Truck Helper
+armyTrucksRandomRespawner,blocks,block,Random Army Truck Respawner
+serviceTrucksRandomRespawner,blocks,block,Random Service Truck Respawner
+busRandomRespawner,blocks,block,Random Bus Respawner
+busShortRespawner,blocks,block,Short Bus Respawner

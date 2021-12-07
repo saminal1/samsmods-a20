@@ -1,0 +1,24 @@
+<!--
+Sam's Car and Truck Respawner
+v20.0.0
+by saminal
+
+blockplaceholders.xml
+-->
+
+<configs>
+    <!-- SJ: Add random respawners for busses and service trucks -->
+    <insertAfter xpath="/blockplaceholders/placeholder[@name='cntCar03SedanDamage2RandomHelper']">
+        <placeholder name="busRandomHelper">
+            <block name="cntBusSchool" prob=".3"/>
+            <block name="cntBusShuttle" prob=".3"/>
+            <block name="cntBusCity" prob=".3"/>
+        </placeholder>
+
+        <placeholder name="serviceTrucksRandomHelper">
+            <block name="cntAmbulanceTruck01" prob=".3"/>
+            <block name="cntServiceTruckMoPower" prob=".3"/>
+            <block name="cntServiceTruckWorkingStiffTools" prob=".3"/>
+        </placeholder>
+    </insertAfter>
+</configs>
