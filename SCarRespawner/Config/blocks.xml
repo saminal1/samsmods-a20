@@ -94,7 +94,7 @@ blocks.xml
             <property name="CustomIcon" value="treeSnowyDeadBush"/>
             <property name="Class" value="PlantGrowing"/>
             <property name="PlantGrowing.Next" value="carsRandomHelper"/>
-            <property name="PlantGrowing.GrowthRate" value="1"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.GrowthRate" value="1440"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
             <property name="PlantGrowing.FertileLevel" value="0"/>
             <property name="PlantGrowing.IsRandom" value="false"/>
             <property name="PlantGrowing.LightLevelGrow" value="8"/>
@@ -122,7 +122,7 @@ blocks.xml
             <property name="CustomIcon" value="treeSnowyDeadBush"/>
             <property name="Class" value="PlantGrowing"/>
             <property name="PlantGrowing.Next" value="cntArmyTruckRandomLootHelper"/>
-            <property name="PlantGrowing.GrowthRate" value="1"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.GrowthRate" value="1440"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
             <property name="PlantGrowing.FertileLevel" value="0"/>
             <property name="PlantGrowing.IsRandom" value="false"/>
             <property name="PlantGrowing.LightLevelGrow" value="8"/>
@@ -150,7 +150,7 @@ blocks.xml
             <property name="CustomIcon" value="treeSnowyDeadBush"/>
             <property name="Class" value="PlantGrowing"/>
             <property name="PlantGrowing.Next" value="serviceTrucksRandomHelper"/>
-            <property name="PlantGrowing.GrowthRate" value="1"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.GrowthRate" value="1440"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
             <property name="PlantGrowing.FertileLevel" value="0"/>
             <property name="PlantGrowing.IsRandom" value="false"/>
             <property name="PlantGrowing.LightLevelGrow" value="8"/>
@@ -178,7 +178,7 @@ blocks.xml
             <property name="CustomIcon" value="treeSnowyDeadBush"/>
             <property name="Class" value="PlantGrowing"/>
             <property name="PlantGrowing.Next" value="busRandomHelper"/>
-            <property name="PlantGrowing.GrowthRate" value="1"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.GrowthRate" value="1440"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
             <property name="PlantGrowing.FertileLevel" value="0"/>
             <property name="PlantGrowing.IsRandom" value="false"/>
             <property name="PlantGrowing.LightLevelGrow" value="8"/>
@@ -206,7 +206,7 @@ blocks.xml
             <property name="CustomIcon" value="treeSnowyDeadBush"/>
             <property name="Class" value="PlantGrowing"/>
             <property name="PlantGrowing.Next" value="cntBusSchoolShort"/>
-            <property name="PlantGrowing.GrowthRate" value="1"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.GrowthRate" value="1440"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
             <property name="PlantGrowing.FertileLevel" value="0"/>
             <property name="PlantGrowing.IsRandom" value="false"/>
             <property name="PlantGrowing.LightLevelGrow" value="8"/>
