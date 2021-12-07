@@ -1,0 +1,78 @@
+<!--
+Sam's ServerInfo ODMAIN
+v20.0.0
+by saminal
+
+windows.xml
+-->
+
+<configs>
+	<append xpath="/windows">
+
+		<!-- SJ: serverinfowindow is commented out in the vanilla xui.xml but activated in this modlet -->
+		<!-- SJ: to host your own PNGs use Alloc's Server Fixes and place the files in Mods/Allocs_WebAndMapRendering/webserver/img/ -->
+		<!-- SJ: you can then use your own server IP and webmap port followed by /static/img/filename.png as I have below -->
+
+
+		<window name="serverinfowindow" anchor="CenterTop" pos="-450,-166" width="900" height="800" cursor_area="true">
+			
+			<!-- SJ: Displays the Outback Decay logo (900x125) in the top-middle of the screen -->
+
+			<panel name="header" pos="0,46" height="46" depth="1" disableautobackground="true" >
+				<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />
+				<texture depth="6" pos="450,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26914/static/img/ingamelogobig.png"/>
+				<label style="header.name" pos="6,-6" text="Server Information" />
+			</panel>
+			
+			<!-- SJ: Displays a text box under the banner (896x746) -->
+
+			<panel name="content" pos="0,0" height="450" depth="1" pivot="center" disableautobackground="true" >
+				<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="750" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+				<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="746" width="896" color="[black]" type="sliced" fillcenter="true" globalopacity="false" globalopacitymod="0.9" />
+				<label pos="10,-10" depth="2" text="Rules on this server:" />
+				
+				<!-- SJ: Displays the rules and info in the top half of the box, one column -->
+
+				<grid pos="20,-45" depth="2" rows="0" cell_width="890" cell_height="30" repeat_content="false" arrangement="vertical">
+					<label text="1. Don't be a dickhead"/>
+					<label text="2. Don't take over POIs" />
+					<label text="3. If it ain't yours, don't take it" />
+					<label text="4. Be sociable" />
+					<label text="" />
+					<label text="For more details join our Discord at https://discord.gg/F4w3fRh" />
+					<label text="or use the QR code above" />
+					<label text="" />
+					<label text="Mod Information" />
+					<label text="- " />
+					<label text="- " />
+					<label text="- " />
+					<label text="- " />
+					<label text="- " />
+					<label text="- " />
+					<label text="- Outback Decay &quot;Aussification&quot; and customised POIs" />
+				</grid>
+
+				<!-- SJ: Displays a mod summary under the rules and info, two columns -->
+
+				<grid pos="20,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
+					<label text="- Khaine's KillTracking" />
+					<label text="- Khaine's Lockable Slots" />
+					<label text="- " />
+					<label text="- " />
+				</grid>
+				<grid pos="470,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
+					<label text="- Khaine's 3 Slot Forge" />
+					<label text="- Khaine's Dangerous Cities" />
+					<label text="- " />
+					<label text="" />
+				</grid>
+
+				<!-- SJ: Displays a QR code for discord at the top right of the text box -->
+
+				<texture depth="6" pos="792,-128" width="200" height="257" pivot="center" texture="@http://139.99.144.197:26914/static/img/discordlogo.png"/>
+
+
+			</panel>
+		</window>
+	</append>
+</configs>
