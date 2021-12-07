@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Sam's Deco Stuff" />
+		<Description value="Added recipes for several decorative blocks, including helpervariants to simplify it" />
+		<Author value="Saminal" />
+		<Version value="20.0.0" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+	</ModInfo>
+</xml>

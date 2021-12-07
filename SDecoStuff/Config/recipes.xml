@@ -1,0 +1,118 @@
+<!--
+Sam's Deco Stuff
+v20.0.0
+by saminal
+lightly tested, good luck
+
+recipes.xml
+-->
+
+		
+<configs>		
+	<append xpath="/recipes">
+		<recipe name="woodDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourcePaper" count="10"/>
+		</recipe>
+
+		<recipe name="metalDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+
+		<recipe name="mixedDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceForgedIron" count="5"/>			
+		</recipe>
+
+		<recipe name="polymerDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+
+		<recipe name="concreteDecoBlockVariantHelper" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceConcreteMix" count="10"/>
+		</recipe>
+		
+		<!-- <recipe name="birdBathPlanterDeco" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceConcreteMix" count="10"/>
+		</recipe>
+
+		<recipe name="decoConcreteBollard" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceConcreteMix" count="10"/>
+		</recipe> -->
+
+		<recipe name="electricDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+
+		<recipe name="glassDecoBlockVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBrokenGlass" count="20"/>
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>
+		
+		<recipe name="cntVendingMachine2BrokenDeco" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		
+		<recipe name="cntPurse01Deco" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="10"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		
+		<recipe name="cntDuffle01Deco" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="10"/>
+			<ingredient name="resourceLeather" count="5"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		
+		<recipe name="decoCarMotorFlat" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="smallEngine" count="1"/>
+		</recipe>
+		
+		<recipe name="decoCarMotorFlipped" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="smallEngine" count="1"/>
+		</recipe>
+		
+		<recipe name="cntHardenedChestSecureDeco" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+		
+
+		<!-- SJ: Moved to Storage Stuff  -->
+		<!-- <recipe name="cntSecureStorageChestHeroDeco" craft_area="workbench">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="8"/>
+        </recipe> -->
+
+		<recipe name="candelabraLight" count="1" craft_area="workbench">
+            <ingredient name="resourceScrapBrass" count="50"/>
+            <ingredient name="candle" count="3"/>
+        </recipe>
+
+		<recipe name="decoEmberPileFire" count="1">
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="15"/>
+        </recipe>
+
+		<recipe name="modularFireWoodStackCFire" count="1">
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="5"/>
+        </recipe>
+
+		<recipe name="cntWoodBurningStoveFire" count="1">
+			<ingredient name="resourceForgedIron" count="15"/>
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="15"/>
+		</recipe>
+	</append>
+</configs>

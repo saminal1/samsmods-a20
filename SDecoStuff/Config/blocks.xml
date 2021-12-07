@@ -1,0 +1,209 @@
+<!--
+Sam's Deco Stuff
+v20.0.0
+by saminal
+lightly tested, good luck
+
+blocks.xml
+-->
+
+		
+<configs>		
+	<append xpath="/blocks">
+		<block name="woodDecoBlockVariantHelper">
+			<property name="Extends" value="wineBarrel"/>
+			<property name="CustomIcon" value="wineBarrel"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="wineBarrel,wineBarrelSet,wineBarrelPlain,paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen,decoClassicDogHouse,cntBookcaseEmpty,cntBookcaseFull,emberPileDeco1,emberPileDeco2,driftwood,driftwood2,signShopColdBeer,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,palletEmpty,palletEmptyStack,cntCoffinWildWestClosed,cntCoffinWildWestCracked,cntCoffinWildWestStack,cntCoffinWildWestLeaning,cntCoffinWildWestLidLeaning,shootingRangeTarget"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="metalDecoBlockVariantHelper">
+			<property name="Extends" value="cntIceMachine"/>
+			<property name="CustomIcon" value="cntIceMachine"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntIceMachine,decoMetalBollard,decoCookingPot,cntTrash_can01,cntBin,cntDomedTrashCanEmpty,cntFancyGarbageCan,decoWeightBar,decoBenchPress,decoStationaryBike,cntFileCabinetTallClosed,cntFileCabinetShortClosed,cntBathTubEmpty,decoClawFootBathTub,cntCashRegister,cntToolBoxClosed,cntRollingToolBoxClosed,cntUtilityCartFull,decoTableRound,signRoadPrivate,signYardSign01,cntGunRackSmallEmpty01,cntGunRackSmallEmpty03,cntGunRackSmallMagazines,cntGunRackSmallArmor,cntGunRackLargeGuns01,cntGunRackLargeGuns02,signRoadStop,signRoadWork,cntCharcoalGrillOpen,cntGasGrillOpen,rebarDestroyed,decoSwingSet,decoMetalSlide,cntShoppingCartEmpty,decoHandTruck,decoHoistChain,decoHoistHook,jailBars,jailDoorStatic,jailDoorStaticCentered,cntClothesRackRoundEmpty,cntClothesRackRoundEmpty2,cntClothesRackRectangleEmpty,cntClothesRackRectangleEmpty2,cntClothesRackWallFlat,cntClothesRackWallEmptyHanger,cntStoreShelfDoubleBottomShoesEmpty,cntStoreShelfDoubleTopShoesEmpty,cntStoreShelfSingleBottomShoesEmpty,cntStoreShelfSingleTopShoesEmpty"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="mixedDecoBlockVariantHelper">
+			<property name="Extends" value="decoBasketBallHoop"/>
+			<property name="CustomIcon" value="decoBasketBallHoop"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="decoBasketBallHoop,barStool,parkBenchA,parkBenchB,decoPoolTable"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="polymerDecoBlockVariantHelper">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="CustomIcon" value="decoMannequinFemale"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="decoMannequinFemale,decoMannequinMale,cntSuitcase,decoCarTireFlat,decoCarTirePile,decoCarTireStack,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesTop,palletBrownBoxesLoose"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="concreteDecoBlockVariantHelper">
+			<property name="Extends" value="birdBathPlanter"/>
+			<property name="CustomIcon" value="birdBathPlanter"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="birdBathPlanter,decoConcreteBollard,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsTop,palletWhiteBagsLoose,palletBricksBase,palletBricksTile,palletBricksTop,palletBlueTarpBase,palletBlueTarpTile,graveStone01,graveStone02,graveStone03,graveStone04,graveStone05,graveStone06,graveStone07,graveStone08"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="electricDecoBlockVariantHelper">
+			<property name="Extends" value="cntMicrowaveOvenVer1Closed"/>
+			<property name="CustomIcon" value="cntMicrowaveOvenVer1Closed"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntMicrowaveOvenVer1Closed,cntRetroFridgeVer1Closed,cntFridgeStainlessSteel,cntWasherClosed,cntDryerClosed,cntTrashCompactor,decoComputerDeskTopPC,decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,wallClock,cntToaster,cntCoffeeMaker,cntCoffeeMakerCommercial,satelliteDishSmall,decoTreadmill"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+
+		<block name="glassDecoBlockVariantHelper">
+			<property name="Extends" value="decoReptileTerrarium"/>
+			<property name="CustomIcon" value="decoReptileTerrarium"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="decoReptileTerrarium,cntMedicineCabinetFaucetClosed,cntMedicineCabinetClosed,mirror,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+		
+		<!-- Added versions of vanilla blocks - these are only here so they show up when you search 'deco' -->
+
+		<block name="cntHardenedChestSecureDeco">
+			<property name="Extends" value="cntHardenedChestSecure"/>
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="StabilitySupport" value="false"/>
+		</block>
+		
+		<block name="cntPurse01Deco">
+			<property name="Extends" value="cntPurse01"/>
+			<property name="CustomIcon" value="cntPurse01"/>
+		</block>
+		
+		<block name="cntDuffle01Deco">
+			<property name="Extends" value="cntDuffle01"/>
+			<property name="CustomIcon" value="cntDuffle01"/>
+		</block>
+
+		<block name="birdBathPlanterDeco">
+			<property name="Extends" value="birdBathPlanter"/>
+			<property name="CustomIcon" value="birdBathPlanter"/>
+		</block>
+
+		<block name="cntVendingMachine2BrokenDeco">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Group" value="Science"/>
+			<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+			<property name="CustomIcon" value="cntVendingMachine2Broken"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Crafting/vending_machinePrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="5"/> </property>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Buff" value="buffShocked"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+		</block>
+
+		<block name="decoEmberPileFire">
+			<property name="Tags" value="coalBurnedDmg"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="decoEmberPileFireDesc"/>
+			<property name="Class" value="Particle"/>
+			<property name="CustomIcon" value="emberPileDeco1"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/ember_pile_1Prefab"/>
+			<property name="Light" value="0.5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ParticleName" value="campfire"/>
+			<property name="ParticleOffset" value="0.5,0,0.5"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceCoal" count="3,6" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceCoal" count="3,6" tag="coalHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="5"/>
+			<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+		</block>
+		
+		<block name="modularFireWoodStackCFire">
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="decoEmberPileFireDesc"/>
+			<property name="Class" value="Particle"/>
+			<property name="CustomIcon" value="modularFireWoodStackC"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/modularFireWoodStackCPrefab"/>
+			<property name="Light" value="0.5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ParticleName" value="campfire"/>
+			<property name="ParticleOffset" value="0.5,0,0.5"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Destroy" name="resourceWood" count="5"/>
+			<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+		</block>
+		
+		<block name="cntWoodBurningStoveFire">
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="decoEmberPileFireDesc"/>
+			<property name="Class" value="Particle"/>
+			<property name="CustomIcon" value="cntWoodBurningStove"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="true"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/woodBurningStovePrefab"/>
+			<property name="Light" value="0.5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ParticleName" value="campfire"/>
+			<property name="ParticleOffset" value="0.5,0.3,0.5"/>
+			<property name="FilterTags" value="fdecor,fother"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+		</block>
+
+	</append>
+
+	<!-- SJ: Fix some placement weirdness with a handful of the vanilla blocks -->
+	
+	<remove xpath="blocks/block[@name='wallClock']/property[@name='Place']"/>
+	<remove xpath="blocks/block[@name='cntCoffeeMaker']/property[@name='Place']"/>	
+	<remove xpath="blocks/block[@name='cntWashingMachine']/property[@name='Place']"/>	
+	<remove xpath="blocks/block[@name='cntTrashCompactor']/property[@name='Place']"/>	
+</configs>
