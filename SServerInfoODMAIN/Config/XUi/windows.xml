@@ -14,7 +14,7 @@ windows.xml
 		<!-- SJ: you can then use your own server IP and webmap port followed by /static/img/filename.png as I have below -->
 
 
-		<window name="serverinfowindow" anchor="CenterTop" pos="-450,-166" width="900" height="800" cursor_area="true">
+		<window name="serverinfowindow" anchor="CenterTop" pos="-450,-280" width="900" height="800" cursor_area="true">
 			
 			<!-- SJ: Displays the Outback Decay logo (900x125) in the top-middle of the screen -->
 
