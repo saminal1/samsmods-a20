@@ -1,0 +1,32 @@
+<!--
+Sam's Stack Tweaks
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">300</set>
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">600</set>
+	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarCoffee')]/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarGrainAlcohol']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[@name='resourceBulletTip']/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">6000</set>
+	<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="/items/item[starts-with (@name,'ammoBundle9mm')]/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[starts-with (@name,'ammoBundle44')]/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">250</set>
+</configs>

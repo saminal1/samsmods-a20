@@ -1,0 +1,11 @@
+<!--
+Sam's Stack Tweaks
+v20.0.0
+by saminal
+
+item_modifiers.xml
+-->
+
+<configs>
+	<set xpath="/item_modifiers/item_modifier[starts-with(@name, 'modDye')]/property[@name='Stacknumber']/@value">10</set>
+</configs>

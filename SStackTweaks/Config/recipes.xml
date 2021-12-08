@@ -1,0 +1,16 @@
+<!--
+Sam's Stack Tweaks
+v20.0.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+  <append xpath="/recipes">
+  <!-- Bundle 10000 gas cans to make a 10000 gas can bundle - needs testing to make sure this isn't an experience exploit -->
+    <recipe name="ammoGasCanBundle" count="1" craft_time="20" tags="learnable">
+      <ingredient name="ammoGasCan" count="10000"/>
+    </recipe>
+  </append>
+</configs>
