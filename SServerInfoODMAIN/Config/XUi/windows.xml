@@ -35,7 +35,7 @@ windows.xml
 
 				<grid pos="20,-45" depth="2" rows="0" cell_width="890" cell_height="30" repeat_content="false" arrangement="vertical">
 					<label text="1. Don't be a dickhead"/>
-					<label text="2. Don't take over POIs" />
+					<label text="2. Don't take over large POIs" />
 					<label text="3. If it ain't yours, don't take it" />
 					<label text="4. Be sociable" />
 					<label text="" />
@@ -43,13 +43,13 @@ windows.xml
 					<label text="or use the QR code above" />
 					<label text="" />
 					<label text="Mod Information" />
-					<label text="- " />
-					<label text="- " />
-					<label text="- " />
-					<label text="- " />
-					<label text="- " />
-					<label text="- " />
+					<label text="- Sam's Storage Stuff - Lockable furniture for your base" />
+					<label text="- Sam's Deco Stuff - Deco blocks to add a touch of charm" />
+					<label text="- Sam's Stack Tweaks - Increase stack size for a number of items" />
+					<label text="- Sam's Car and Truck Respawner - harvested vehicles respawn after a delay" />
 					<label text="- Outback Decay &quot;Aussification&quot; and customised POIs" />
+					<label text="" />
+					<label text="" />
 				</grid>
 
 				<!-- SJ: Displays a mod summary under the rules and info, two columns -->
@@ -57,13 +57,13 @@ windows.xml
 				<grid pos="20,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
 					<label text="- Khaine's KillTracking" />
 					<label text="- Khaine's Lockable Slots" />
-					<label text="- " />
-					<label text="- " />
+					<label text="" />
+					<label text="" />
 				</grid>
 				<grid pos="470,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
 					<label text="- Khaine's 3 Slot Forge" />
 					<label text="- Khaine's Dangerous Cities" />
-					<label text="- " />
+					<label text="" />
 					<label text="" />
 				</grid>
 
