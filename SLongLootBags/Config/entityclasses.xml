@@ -1,0 +1,11 @@
+<!--
+Sam's Long Loot Bags
+v20.0.0
+by saminal
+
+entityclasses.xml
+-->
+
+<configs>
+    <set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">2400</set>
+</configs>
