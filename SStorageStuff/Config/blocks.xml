@@ -201,13 +201,12 @@ blocks.xml
         <block name="cntPillCasePlayer">
             <property name="Class" value="SecureLoot"/>
             <property name="Material" value="Mwood_weak"/>
-            <property name="Shape" value="New"/>
-            <property name="Model" value="cube_half"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?pill_case_closedPrefab.prefab"/>
             <property name="CustomIcon" value="cntPillCaseClosed"/>
             <property name="ItemTypeIcon" value="lock"/>
             <property name="DowngradeBlock" value="cntPillCasePlayerInsecure"/>
             <property name="SortOrder2" value="0060"/> <!-- SortShape -->
-            <property name="Texture" value="25,25,312,312,312,312"/> <!-- 55 wood -->
             <property name="Place" value="TowardsPlacer90"/>
             <property name="LootList" value="playerCupboard"/>
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
@@ -219,11 +218,10 @@ blocks.xml
         <block name="cntPillCasePlayerInsecure">
             <property name="Class" value="Loot"/>
             <property name="Material" value="Mwood_weak"/>
-            <property name="Shape" value="New"/>
-            <property name="Model" value="cube_half"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?pill_case_closedPrefab.prefab"/>
             <property name="CustomIcon" value="cntPillCaseClosed"/>
             <property name="SortOrder2" value="0060"/> <!-- SortShape -->
-            <property name="Texture" value="25,25,312,312,312,312"/> <!-- 55 wood -->
             <property name="Place" value="TowardsPlacer90"/>
             <property name="LootList" value="playerCupboard"/>
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
