@@ -1,0 +1,63 @@
+<!--
+Sam's Storage Stuff
+v20.0.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+    <append xpath="/recipes">
+        <recipe name="cntCabinetBottomPlayer" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="24"/>
+        </recipe>
+
+        <recipe name="cntBookcasePlayer" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="24"/>
+        </recipe>
+
+        <!-- <recipe name="heatVentPlayer" count="1">
+            <ingredient name="resourceForgedIron" count="1"/>
+            <ingredient name="resourceNail" count="10"/>
+            <ingredient name="resourceWood" count="24"/>
+        </recipe> -->
+
+        <recipe name="cntPillCasePlayer" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="24"/>
+        </recipe>
+
+        <recipe name="cntWoodDeskPlayer" count="1">
+            <ingredient name="resourceNail" count="20"/>
+            <ingredient name="resourceWood" count="30"/>
+        </recipe>
+
+        <recipe name="cntRetroFridgePlayer" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="25"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceMetalPipe" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+
+        <recipe name="cntFridgeStainlessSteelPlayer" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="25"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
+            <ingredient name="resourceElectricParts" count="5"/>
+            <ingredient name="resourceMetalPipe" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+
+        <recipe name="cntLootChestHero" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="8"/>
+        </recipe>
+
+        <!-- <recipe name="cntSecureStorageChestHero" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedSteel" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="16"/>
+        </recipe> -->
+    </append>
+</configs>

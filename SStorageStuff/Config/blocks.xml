@@ -1,0 +1,286 @@
+<!--
+Sam's Storage Stuff
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+    <append xpath="/blocks">
+
+        <block name="cntCabinetBottomPlayer">
+            <property name="Class" value="SecureLoot"/> <!-- Upgraded to lockable -->
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="MwoodReinforced"/> <!-- strength -->
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/> <!-- Because icon doesn't exist for new blockname -->
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/> <!-- localisation generic -->
+            <property name="Shape" value="New"/>
+            <property name="Model" value="counter"/> 
+            <property name="Texture" value="261,345,262,345,345,345"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerCupboard"/> <!-- Sounds like a cupboard -->
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <property name="DowngradeBlock" value="cntCabinetBottomPlayerInsecure"/>
+            <drop event="Destroy" count="0"/> <!-- because it will change to insecure -->
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="IsDecoration" value="true"/>
+            <property name="EconomicValue" value="17"/>
+            <property name="EconomicBundleSize" value="20"/>
+        </block>
+
+        <block name="cntCabinetBottomPlayerInsecure">
+            <property name="Class" value="Loot"/> <!-- Upgraded to lockable -->
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="MwoodReinforced"/> <!-- strength -->
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/> <!-- Because icon doesn't exist for new blockname -->
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/> <!-- localisation generic -->
+            <property name="Shape" value="New"/>
+            <property name="Model" value="counter"/> 
+            <property name="Texture" value="261,345,262,345,345,345"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerCupboard"/> <!-- Sounds like a cupboard -->
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <drop event="Destroy" count="0"/> <!-- No Resources -->
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="IsDecoration" value="true"/>
+            <property name="EconomicValue" value="17"/>
+            <property name="EconomicBundleSize" value="20"/>
+        </block>
+
+        <!-- cntStorageGeneric
+        cntStorageGenericSigned
+        cntCabinetBottomFiller
+        cntCabinetBottom
+        cntCabinetBottomOpen
+        cntCupboardCabinetRedTopOpen
+        cntCupboardCabinetRedTopClosed
+        cntCupboardCornerCNRRed
+        cntCupboardCabinetFullRedTopClosed
+        cntCabinetBottomBrokenDoor
+        cntCabinetOldBottomOpen
+        cntCabinetOldBottom
+        cntCabinetOldCNRRoundFiller
+        cntCupboardCabinetOldTopOpen
+        cntCupboardCabinetOldTopClosed
+        cntCupboardCornerCNROld
+        cntCupboardCabinetFullOldTopClosed
+        cntBookcaseEmpty
+        cntBookcaseFull
+        cntPillCase
+        cntNightstandOpen
+        cntNightstandClosed
+        cntWoodDesk01Open
+        cntWoodDesk01Closed
+        woodChair1
+        oldChair1decoPicnicTable,coffeeTable,endTable,tableDynamic,woodTable,
+        -->
+
+        <block name="cntBookcasePlayer">
+            <property name="Class" value="SecureLoot"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="CustomIcon" value="cntBookcaseFull"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="bookcase_full"/> <property name="Place" value="TowardsPlacer90"/>
+            <property name="Texture" value="67,269,269,269,269,269"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <property name="DowngradeBlock" value="cntBookcasePlayerInsecure"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+        </block>
+
+        <block name="cntBookcasePlayerInsecure">
+            <property name="Class" value="Loot"/>
+            <property name="CreativeMode" value="None"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="CustomIcon" value="cntBookcaseFull"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="bookcase_full"/> <property name="Place" value="TowardsPlacer90"/>
+            <property name="Texture" value="67,269,269,269,269,269"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+        </block>
+
+        <block name="cntRetroFridgePlayer">
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="SecureLoot"/>
+            <property name="CustomIcon" value="cntRetroFridgeVer1Closed"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="LootList" value="playerFridge"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Mesh" value="models"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="Entities/Appliances/fridgeRetroClosedPrefab" param1="main_mesh"/> <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="27"/>
+            <property name="DowngradeBlock" value="cntRetroFridgePlayerInsecure"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="10"/>
+                <property name="resourceMetalPipe" value="2"/>
+                <property name="resourceElectricParts" value="10"/>
+            </property>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceMechanicalParts" count="0,1" prob="0.4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapPolymers" count="0,1" prob="0.2" tag="salvageHarvest"/>
+            <drop event="Destroy" name="resourceScrapIron" count="2,10"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="EconomicValue" value="192"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+        </block>
+
+        <block name="cntRetroFridgePlayerInsecure">
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerFridge"/>
+            <property name="CustomIcon" value="cntRetroFridgeVer2Open"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Mesh" value="models"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="Entities/Appliances/fridgeRetroOpenPrefab" param1="main_mesh"/> <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="27"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="10"/>
+                <property name="resourceMetalPipe" value="2"/>
+                <property name="resourceElectricParts" value="10"/>
+            </property>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceMechanicalParts" count="0,1" prob="0.4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapPolymers" count="0,1" prob="0.2" tag="salvageHarvest"/>
+            <drop event="Destroy" name="resourceScrapIron" count="2,10"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="EconomicValue" value="192"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+        </block>
+
+        <block name="cntFridgeStainlessSteelPlayer">
+            <property name="Extends" value="cntRetroFridgePlayer"/>
+            <property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntFridgeStainlessSteel"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DowngradeBlock" value="cntFridgeStainlessSteelPlayerInsecure"/>
+        </block>
+
+        <block name="cntFridgeStainlessSteelPlayerInsecure">
+            <property name="Extends" value="cntRetroFridgePlayerInsecure"/>
+            <property name="Model" value="Entities/Appliances/fridgeStainlessSteelOpenPrefab" param1="main_mesh"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntFridgeStainlessSteelVer2Open"/>
+        </block>
+
+        <block name="cntPillCasePlayer">
+            <property name="Class" value="SecureLoot"/>
+            <property name="Material" value="Mwood_weak"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube_half"/>
+            <property name="CustomIcon" value="cntPillCaseClosed"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DowngradeBlock" value="cntPillCasePlayerInsecure"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+            <property name="Texture" value="25,25,312,312,312,312"/> <!-- 55 wood -->
+            <property name="Place" value="TowardsPlacer90"/>
+            <property name="LootList" value="playerCupboard"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+        </block>
+
+        <block name="cntPillCasePlayerInsecure">
+            <property name="Class" value="Loot"/>
+            <property name="Material" value="Mwood_weak"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube_half"/>
+            <property name="CustomIcon" value="cntPillCaseClosed"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+            <property name="Texture" value="25,25,312,312,312,312"/> <!-- 55 wood -->
+            <property name="Place" value="TowardsPlacer90"/>
+            <property name="LootList" value="playerCupboard"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+        </block>
+
+        <block name="cntWoodDeskPlayer">
+            <property name="Extends" value="cntWoodDesk01Open"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="Model" value="Furniture/desk01" param1="main_mesh"/>
+            <property name="Class" value="SecureLoot"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property name="CustomIcon" value="cntWoodDesk01Closed"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DowngradeBlock" value="cntWoodDeskPlayerInsecure"/>
+        </block>
+        
+        <block name="cntWoodDeskPlayerInsecure">
+            <property name="Extends" value="cntWoodDesk01Open"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="Model" value="Furniture/desk01_ver2" param1="main_mesh"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property name="CustomIcon" value="cntWoodDesk01Open"/>
+        </block>
+
+        <!-- <block name="cntSecureStorageChestHero">
+            <property name="CreativeMode" value="Player"/>
+            <property name="Tags" value="door"/>
+            <property name="Class" value="SecureLoot"/>
+            <property name="CustomIcon" value="cntHardenedChestSecure"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Material" value="Mmetal_weak"/>
+            <property name="MaxDamage" value="7000"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?tier4LootChestPrefab.prefab"/>
+            <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="LootList" value="playerDrawer"/>
+                <property class="RepairItems">
+                <property name="resourceForgedSteel" value="6"/>
+            </property>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DowngradeBlock" value="cntHardenedChestInsecure"/>
+            <property name="Group" value="Basics,Building,advBuilding"/>
+            <property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
+            <property name="EconomicValue" value="150"/>
+            <property name="EconomicBundleSize" value="10"/>
+            <property name="FilterTags" value="floot,ffurniture"/>
+        </block> -->
+    </append>
+</configs>
+
+<!-- cntWineBarrel
+cntWineBarrelSet
+cntWineBarrelPlain -->

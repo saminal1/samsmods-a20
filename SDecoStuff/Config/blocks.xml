@@ -204,6 +204,5 @@ blocks.xml
 	
 	<remove xpath="blocks/block[@name='wallClock']/property[@name='Place']"/>
 	<remove xpath="blocks/block[@name='cntCoffeeMaker']/property[@name='Place']"/>	
-	<remove xpath="blocks/block[@name='cntWashingMachine']/property[@name='Place']"/>	
 	<remove xpath="blocks/block[@name='cntTrashCompactor']/property[@name='Place']"/>	
 </configs>

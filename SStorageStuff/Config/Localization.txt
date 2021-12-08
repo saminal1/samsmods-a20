@@ -1,0 +1,17 @@
+Key,File,Type,UsedInMainMenu,english
+cntBookcasePlayer,blocks,Furniture,,Bookcase (Storage)
+playerStorageGroupDesc,blocks,Furniture,,Furniture items usually have small storage values and cannot be locked. These storage items can be secured and have full chest size storage. 
+cntBookcasePlayerInsecure,blocks,Furniture,,Bookcase (Storage) Insecure
+cntRetroFridgePlayer,blocks,Furniture,,Retro Fridge (Storage)
+cntRetroFridgePlayerInsecure,blocks,Furniture,,Retro Fridge (Storage) Insecure
+cntFridgeStainlessSteelPlayer,blocks,Furniture,,Stainless Steel Fridge (Storage)
+cntFridgeStainlessSteelPlayerInsecure,blocks,Furniture,,Stainless Steel Fridge (Storage) Insecure
+cntPillCasePlayer,blocks,Furniture,,Pill Case (Storage)
+cntPillCasePlayerInsecure,blocks,Furniture,,Pill Case (Storage) Insecure
+cntWoodDeskPlayer,blocks,Furniture,,Wooden Desk (Storage)
+cntWoodDeskPlayerInsecure,blocks,Furniture,,Wooden Desk (Storage) Insecure
+cntCabinetBottomPlayer,blocks,Furniture,,Cupboard (Storage)
+cntCabinetBottomPlayerInsecure,blocks,Furniture,,Cupboard (Storage) Insecure
+heatVentPlayer,blocks,Furniture,,Top Secret Vent (Storage)
+heatVentPlayerInsecure,blocks,Furniture,,Top Secret Vent (Storage) Insecure
+cntLootChestHero,blocks,Container,,,Reinforced Storage Chest
