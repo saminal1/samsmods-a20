@@ -43,13 +43,13 @@ windows.xml
 					<label text="or use the QR code above" />
 					<label text="" />
 					<label text="Mod Information" />
-					<label text="- Sam's Storage Stuff - Lockable furniture for your base" />
+					<label text="- Sam's Building Stuff - Wood/Iron/Steel Bars, Steel Spike Traps, POI Doors &amp; Windows" />
 					<label text="- Sam's Deco Stuff - Deco blocks to add a touch of charm" />
+					<label text="- Sam's Storage Stuff - Lockable furniture for your base" />
+					<label text="- Sam's Working Stuff - Working versions of POI lights, plus Working Ovens and BBQ Grills" />
 					<label text="- Sam's Stack Tweaks - Increase stack size for a number of items" />
 					<label text="- Sam's Car and Truck Respawner - harvested vehicles respawn after a delay" />
 					<label text="- Outback Decay &quot;Aussification&quot; and customised POIs" />
-					<label text="" />
-					<label text="" />
 				</grid>
 
 				<!-- SJ: Displays a mod summary under the rules and info, two columns -->
@@ -57,13 +57,13 @@ windows.xml
 				<grid pos="20,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
 					<label text="- Khaine's KillTracking" />
 					<label text="- Khaine's Lockable Slots" />
-					<label text="" />
+					<label text="- AGF HUDPlus" />
 					<label text="" />
 				</grid>
 				<grid pos="470,-550" depth="2" rows="0" cell_width="440" cell_height="30" repeat_content="false" arrangement="vertical">
 					<label text="- Khaine's 3 Slot Forge" />
 					<label text="- Khaine's Dangerous Cities" />
-					<label text="" />
+					<label text="- Sam's Long Loot Bags" />
 					<label text="" />
 				</grid>
 
