@@ -1,0 +1,54 @@
+<!--
+Sam's Working Stuff
+v20.0.0
+by saminal
+
+xui.xml
+-->
+
+<configs>
+
+<!-- SJ: Add crafting windows for the ovens - powered not functional, waiting optimistically for a future alpha -->
+
+	<append xpath="/xui/ruleset">
+	<window_group name="workstation_cntWallOvenWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cntGasGrillWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_cntCharcoalGrillWorking" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<!-- <window_group name="workstation_cntWallOvenPowered" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group> -->
+				
+	</append>
+</configs>

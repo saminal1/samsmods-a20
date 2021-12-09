@@ -1,0 +1,122 @@
+<!--
+Sam's Working Stuff
+v20.0.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+
+<!--
+SJ: Add recipes to make vanilla faucets at the forge
+Add recipes to turn vanilla faucets into working ones at the workbench
+Add recipe to craft a working oven at the workbench
+-->
+
+	<append xpath="recipes">
+	
+		<!-- Forge recipes -->
+		
+		<recipe name="faucet02" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		
+		<recipe name="faucetBrass02" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_brass" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		
+		<recipe name="faucet04" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		
+		<recipe name="faucetBrass04" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_brass" count="50"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		
+		<!-- Workbench recipes -->
+		
+		<recipe name="faucet02Working" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="faucet02" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+		</recipe>
+		
+		<recipe name="faucetBrass02Working" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="faucetBrass02" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+		</recipe>
+		
+		<recipe name="faucet04Working" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="faucet04" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+		</recipe>
+		
+		<recipe name="faucetBrass04Working" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="faucetBrass04" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+		</recipe>
+		
+		<recipe name="cntWallOvenWorking" count="1" craft_area="workbench" tags="perkMasterChef,learnable">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntGasGrillWorking" count="1" craft_area="workbench" tags="perkMasterChef,learnable">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="toolCookingGrill" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntCharcoalGrillWorking" count="1" craft_area="workbench" tags="perkMasterChef,learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="toolCookingPot" count="1"/>
+			<ingredient name="toolCookingGrill" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+		
+		<recipe name="decoClawFootBathTubWorking" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="faucetBrass02" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+		
+		<recipe name="cntBathTubEmptyWorking" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceConcreteMix" count="10"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="faucet04" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+
+<!-- SJ: Add working lights and wireless relay recipes -->
+
+		<recipe name="lightPlayerVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceScrapBrass" count="10"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>			
+		</recipe>
+		
+		<recipe name="wirelessWireRelay" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>	
+		</recipe>
+
+	</append>
+	
+</configs>

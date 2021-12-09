@@ -1,0 +1,37 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+cntWallOvenWorking,blocks,Container,,,Working Wall Oven
+cntWallOvenPowered,blocks,Container,,,Powered Wall Oven
+faucet02Working,blocks,Block,,,Working Household Faucet 2
+faucet04Working,blocks,Block,,,Working Household Faucet
+faucetBrass02Working,blocks,Block,,,Working Brass Faucet 2
+faucetBrass04Working,blocks,Block,,,Working Brass Faucet
+tableLampLightPlayer,blocks,Light,,,Table Lamp
+workLightPlayer,blocks,Light,,,Work Light
+signExitLightPlayer,blocks,Light,,,Exit Sign
+industrialLight02RedPlayer,blocks,Light,,,Red Industrial Light
+ceilingFanLightPlayer,blocks,Light,,,Ceiling Fan Light
+signShopOpenPlayer,blocks,Sign,,,Shop Sign: Open
+deskLampLightPlayer,blocks,Light,,,Desk Lamp
+lightPlayerVariantHelper,blocks,Light,,,Working Lamps and Lights
+sconce1LightShadowPlayer,blocks,Light,,,Sconce Light
+porchLight01Player,blocks,Light,,,Old Outdoor Light
+porchLight04BrassPlayer,blocks,Light,,,Brass Outdoor Light
+wirelessWireRelay,blocks,Electricity,,,Wireless Wire Relay
+wirelessWireRelayDesc,blocks,Electricity,,,Use this in place of a Wire Relay to connect devices without those pesky cables ruining the aesthetic of your base.
+cntGasGrillWorking,blocks,Block,,,Working Gas Grill
+cntCharcoalGrillWorking,blocks,Block,,,Working Charcoal Grill
+porchLight04Player,blocks,Light,,,Iron Outdoor Light
+ceilingLight02Player,blocks,Light,,,Silver Dome Light
+ceilingLight02BrassPlayer,blocks,Light,,,Brass Dome Light
+ceilingLight04Player,blocks,Light,,,Warehouse Ceiling Light
+ceilingLight05Player,blocks,Light,,,Silver Glass Light
+ceilingLight05BrassPlayer,blocks,Light,,,Brass Glass Light
+recessedLightPlayer,blocks,Light,,,Recessed Light
+wallLight01Player,blocks,Light,,,Warehouse Outdoor Light
+fluorescentLightPlayer,blocks,Light,,,Hanging Fluorescent Light
+trackLightPlayer,blocks,Light,,,Track Light
+chandelierLightPlayer,blocks,Light,,,Chandelier
+faucet04WorkingSchematic,items,Schematic,,,Working Faucet Schematic
+cntWallOvenWorkingSchematic,items,Schematic,,,Working Ovens and Grills Schematic
+decoClawFootBathTubWorking,blocks,Block,,,Working Clawfoot Bathtub
+cntBathTubEmptyWorking,blocks,Block,,,Working Bathtub

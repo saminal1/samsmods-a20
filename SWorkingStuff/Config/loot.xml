@@ -1,0 +1,17 @@
+<!--
+Sam's Working Stuff
+v20.0.0
+by saminal
+limited testing, good luck
+
+loot.xml
+-->
+
+<configs>
+
+    <append xpath="lootcontainers/lootgroup[@name='schematicsElectrical']">
+        <item name="faucet04WorkingSchematic"/>
+        <item name="cntWallOvenWorkingSchematic"/>
+    </append>
+    
+</configs>

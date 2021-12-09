@@ -1,0 +1,121 @@
+<!--
+Sam's Working Stuff
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+
+<!-- SJ: Add crafted faucets to list of blocks that will refill Jars and Buckets -->
+
+    <remove xpath="/items/item[@name='drinkJarEmpty']"/>
+    <remove xpath="/items/item[@name='bucketEmpty']"/>
+    <insertBefore xpath="/items/item[@name='drinkJarRiverWater']">
+        <item name="drinkJarEmpty">
+            <property name="HoldType" value="3"/>
+            <property name="Meshfile" value="#Other/Items?Food/emptyJarPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mglass"/>
+            <property name="Stacknumber" value="125"/> <!-- STK resource -->
+            <property name="Weight" value="10"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="CraftingIngredientTime" value="9"/>
+            <property class="Action1"> <!-- UseAction -->
+                <property name="Class" value="ExchangeItem"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Change_item_to" value="drinkJarRiverWater"/>
+                <property name="Do_block_action" value="deplete1"/>
+                <property name="Focused_blockname_1" value="water"/>
+                <property name="Focused_blockname_2" value="waterMoving"/>
+                <property name="Focused_blockname_3" value="waterStaticBucket"/>
+                <property name="Focused_blockname_4" value="waterMovingBucket"/>
+                <property name="Focused_blockname_5" value="terrWaterPOI"/>
+                <property name="Focused_blockname_6" value="faucet02Working"/>
+                <property name="Focused_blockname_7" value="faucet04Working"/>
+                <property name="Focused_blockname_8" value="faucetBrass02Working"/>
+                <property name="Focused_blockname_9" value="faucetBrass04Working"/>
+                <property name="Focused_blockname_10" value="decoClawFootBathTubWorking"/>
+                <property name="Focused_blockname_11" value="cntBathTubEmptyWorking"/>
+                <property name="Sound_start" value="bucketfill_water"/>
+            </property>
+            <property name="Group" value="Resources"/>
+        </item>
+    </insertBefore>
+    <insertBefore xpath="/items/item[@name='bucketRiverWater']">
+        <item name="bucketEmpty">
+            <property name="HoldType" value="34"/>
+            <property name="Meshfile" value="#Other/Items?Crafting/Metal/IronBucket.fbx"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="EconomicValue" value="84"/>
+            <property class="Action0">
+                <property name="Class" value="BailLiquid"/>
+                <property name="Delay" value=".35"/>
+                <property name="Sound_start" value="bucketbail_water"/>
+            </property>
+            <property class="Action1"> <!-- UseAction -->
+                <property name="Class" value="ExchangeItem"/>
+                <property name="Delay" value=".35"/>
+                <property name="Change_item_to" value="bucketRiverWater"/>
+                <property name="Do_block_action" value="deplete3"/>
+                <property name="Focused_blockname_1" value="water"/>
+                <property name="Focused_blockname_2" value="waterMoving"/>
+                <property name="Focused_blockname_3" value="waterStaticBucket"/>
+                <property name="Focused_blockname_4" value="waterMovingBucket"/>
+                <property name="Focused_blockname_5" value="terrWaterPOI"/>
+                <property name="Focused_blockname_6" value="faucet02Working"/>
+                <property name="Focused_blockname_7" value="faucet04Working"/>
+                <property name="Focused_blockname_8" value="faucetBrass02Working"/>
+                <property name="Focused_blockname_9" value="faucetBrass04Working"/>
+                <property name="Focused_blockname_10" value="decoClawFootBathTubWorking"/>
+                <property name="Focused_blockname_11" value="cntBathTubEmptyWorking"/>
+                <property name="Sound_start" value="bucketfill_water"/>
+            </property>
+            <property name="Group" value="Tools/Traps"/>
+        </item>
+    </insertBefore>
+
+
+<!-- SJ: Generator bank schematic unlocks working lamps and lights, and wireless -->
+
+	<append xpath="items/item[@name='generatorbankSchematic']/effect_group[@tiered='false']">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="lightPlayerVariantHelper" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="wirelessWireRelay" operation="set" value="1"/>
+	</append>
+
+<!-- SJ: Add schematic for working ovens and faucets to allow intelligence to be ignored -->
+
+    <insertAfter xpath="items/item[@name='plantedPumpkin1Schematic']">
+        <item name="faucet04WorkingSchematic">
+            <property name="Extends" value="schematicNoQualityRecipeMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="faucet04"/>
+            <property name="Unlocks" value="faucet04Working"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucet02Working" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucetBrass02Working" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucet04Working" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucetBrass04Working" operation="set" value="1"/>                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucet04Working" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="decoClawFootBathTubWorking" operation="set" value="1"/>                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="faucet04Working" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntBathTubEmptyWorking" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+
+        <item name="cntWallOvenWorkingSchematic">
+            <property name="Extends" value="schematicNoQualityRecipeMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntWallOven"/>
+            <property name="Unlocks" value="cntWallOven"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntWallOven" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntCharcoalGrillWorking" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntGasGrillWorking" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </insertAfter>
+</configs>
