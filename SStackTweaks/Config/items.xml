@@ -18,7 +18,7 @@ items.xml
 	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">25</set>
-	<set xpath="/items/item[@name='drinkJarCoffee')]/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='drinkJarGrainAlcohol']/property[@name='Stacknumber']/@value">25</set>
 	<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='Stacknumber']/@value">5000</set>
