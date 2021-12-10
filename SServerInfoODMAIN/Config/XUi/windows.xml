@@ -20,7 +20,7 @@ windows.xml
 
 			<panel name="header" pos="0,46" height="46" depth="1" disableautobackground="true" >
 				<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" />
-				<texture depth="6" pos="450,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26914/static/img/ingamelogobig.png"/>
+				<texture depth="6" pos="450,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26904/static/img/ingamelogobig.png"/>
 				<label style="header.name" pos="6,-6" text="Server Information" />
 			</panel>
 			
@@ -69,7 +69,7 @@ windows.xml
 
 				<!-- SJ: Displays a QR code for discord at the top right of the text box -->
 
-				<texture depth="6" pos="792,-128" width="200" height="257" pivot="center" texture="@http://139.99.144.197:26914/static/img/discordlogo.png"/>
+				<texture depth="6" pos="792,-128" width="200" height="257" pivot="center" texture="@http://139.99.144.197:26904/static/img/discordlogo.png"/>
 
 
 			</panel>
