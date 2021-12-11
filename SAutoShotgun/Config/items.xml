@@ -1,0 +1,14 @@
+<!--
+Sam's AutoShotgun Unnerfing
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+    <set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='base_set']/@value">140</set>
+    <set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
+    <set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='KickDegreesVerticalMax' and @operation='base_set']/@value">8.4</set>
+    <set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='WeaponHandling' and @operation='base_set']/@value">2.2</set>
+</configs>

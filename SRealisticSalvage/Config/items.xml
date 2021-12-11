@@ -1,0 +1,19 @@
+<!--
+Sam's Realistic Salvage
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+    <!-- SJ: A ratchet means you don't have to reposition the wrench between hits - should have a faster 'fire' rate -->
+
+    <set xpath="items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']/passive_effect[@name='AttacksPerMinute']/@value">70</set>
+
+    <!-- SJ: Impact driver should have a similar fire rate to the ratchet but it's a power tool, so the stamina cost should be much lower! -->
+
+    <set xpath="items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='AttacksPerMinute']/@value">80</set>
+    <set xpath="items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='StaminaLoss']/@value">10.5</set>
+
+</configs>
