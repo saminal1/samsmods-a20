@@ -5,7 +5,7 @@ by saminal
 
 blocks.xml
 -->
-
+<configs>
     <!-- SJ: Add fertile soil block to let builders place plants on terrain -->
 
     <append xpath="/blocks">
@@ -53,6 +53,5 @@ blocks.xml
 	<set xpath="/blocks/block[@name='garageDoorHousePlayer']/property[@name='OnlySimpleRotations']/@value">false</set>
 	<set xpath="/blocks/block[@name='garageDoorIndustrial']/property[@name='OnlySimpleRotations']/@value">false</set>
 	<set xpath="/blocks/block[@name='garageDoorIndustrial_Powered']/property[@name='OnlySimpleRotations']/@value">false</set>
-    <set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='OnlySimpleRotations']/@value">false</set>
 
 </configs>
