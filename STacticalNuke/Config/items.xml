@@ -1,0 +1,72 @@
+<!--
+Sam's Tactical Nuke
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+
+	<append xpath="/items">
+
+		<item name="thrownGrenadeTacticalNuke"> <!-- T3 demolitions (perk 5) -->
+			<property name="Extends" value="thrownGrenadeContact" param1="ExplodeOnHit"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+			<property name="DisplayType" value="ammoGrenade"/>
+			<property name="CustomIcon" value="thrownGrenadeContact"/>
+			<property name="CustomIconTint" value="ff66cc"/>
+			<property name="DescriptionKey" value="thrownGrenadeTacticalNukeDesc"/>
+			<property name="FuseTime" value="5"/>
+			<property name="StickPercent" value=".3"/>
+			<property name="Explosion.ParticleIndex" value="5"/>
+			<property name="Explosion.RadiusBlocks" value="15"/>
+			<property name="Explosion.RadiusEntities" value="15"/>
+			<property name="Explosion.BlastPower" value="150"/>
+			<property name="Explosion.DamageBonus.earth" value="2"/>			
+			<effect_group tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="5000"/><display_value name="dExDamageBlock" value="10"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="10000"/><display_value name="dExDamageEntity" value="310"/>
+				<display_value name="dExRadius" value="15"/>
+				<display_value name="dFuseTime" value="5"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".1"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".05"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".2"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".3"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".2"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".4"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".3"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".45"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="HasBuff" buff="buffDrugAtomJunkies"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+			</effect_group>
+		</item>
+		
+		
+	</append>
+</configs>

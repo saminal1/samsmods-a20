@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text
+thrownGrenadeTacticalNuke,items,Gun,,,Tactical Nuke (Ammo),
+thrownGrenadeTacticalNukeDesc,items,Gun,,,"The Tactical Nuke is a highly volatile, highly dangerous thrown armament. Only a complete madman would ask for a weapon like this.\nStand well back!",
