@@ -1,0 +1,18 @@
+Key,File,Type,UsedInMainMenu,english
+ammoArrowShock,items,Ammo,,Shock Arrow (Ammo)
+ammoCrossbowBoltShock,items,Ammo,,Shock Bolt (Ammo)
+ammoArrowShockDesc,items,Ammo,,"This modified steel-tipped arrow is fitted with a capacitor, which delivers a few thousand volts on impact."
+ammoCrossbowBoltShockDesc,items,Ammo,,"This modified steel-tipped bolt is fitted with a capacitor, which delivers a few thousand volts on impact."
+ammoBundleArrowShock,items,Ammo,,Box of Shock Arrows (75)
+ammoBundleCrossbowBoltShock,items,Ammo,,Box of Shock Bolts (75)
+thrownGrenadeConcussion,items,Ammo,,Concussion Grenade (Ammo)
+thrownGrenadeConcussionDesc,items,Ammo,,"They get knocked down, but they get up again. Try shooting them to keep them down."
+thrownGrenadeShock,items,Ammo,,Shock Grenade (Ammo)
+thrownGrenadeShockDesc,items,Ammo,,"This little gadget will buy you some time to run away or reload. Stuns everything in the area."
+thrownSnowBall,items,Ammo,,Snowball (Heavy)
+thrownSnowBallDesc,items,Ammo,,"You'll have someone's eye out with that."
+buffSnowBallKnockdownName,buffs,Buff,,Snowball Knockdown
+buffSnowBallKnockdownDesc,buffs,Buff,,"You've been knocked down by a snowball. Who would do such a thing?"
+statShockDuration,ui_display,Item stat,,Shock Duration
+thrownGrenadeConcussionSchematic,items,Ammo,,Concussion Grenade Schematic
+thrownGrenadeShockSchematic,items,Ammo,,Shock Grenade Schematic

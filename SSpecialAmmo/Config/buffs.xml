@@ -1,0 +1,153 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+buffs.xml
+-->
+<configs>
+    <append xpath="/buffs">
+        <buff name="buffShockedWeapon" hidden="true">
+            <damage_type value="electrical"/>
+            <stack_type value="replace"/><duration value="0"/>
+            <effect_group>
+                <requirement name="CVarCompare" cvar="buffShockedWeaponDuration" operation="LT" value="5"/>
+                    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="buffShockedWeaponDuration" operation="set" value="5"/>
+                    <triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="buffShockedWeaponDuration" operation="set" value="5"/>
+            </effect_group>
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffShocked"/>
+
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="buffShockedWeaponDuration" operation="add" value="-1"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffShockedWeapon">
+                    <requirement name="CVarCompare" cvar="buffShockedWeaponDuration" operation="LTE" value="0"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="buffShockedWeaponDuration" operation="set" value="0"/>
+            </effect_group>
+            <effect_group>
+                <requirement name="CVarCompare" cvar="buffShockWeaponDuration" operation="LTE" value="1"/>
+                    <triggered_effect trigger="onSelfBuffUpdate" action="Ragdoll" duration="1.5"/>
+            </effect_group>
+
+            <effect_group>
+
+                <passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,8,14,18" value="1,5,11,13">
+                    <requirement name="EntityTagCompare" tags="player"/>
+                </passive_effect>
+
+            </effect_group>
+        </buff>
+
+        <buff name="buffConcussionGrenadeKnockdown" hidden="true">
+            <damage_type value="knockdown"/>
+            <stack_type value="ignore"/>
+            <duration value="4"/>
+            <display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+            <!-- <requirements compare_type="or">
+                <requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+            </requirements> -->
+
+            <effect_group>
+                <passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInjuryKnockdown01"/>
+
+                <passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="3.5" force="20">
+                    <requirement name="!EntityTagCompare" tags="trader"/>
+                </triggered_effect>
+                <!-- <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryKnockdown01Cooldown"/> -->
+
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="4"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".knockdownDisplay" operation="add" value="-1"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="0"/>
+            </effect_group>
+        </buff>
+
+        <buff name="buffConcussionGrenadeKnockdown2" hidden="true">
+            <damage_type value="knockdown"/>
+            <stack_type value="ignore"/>
+            <duration value="4"/>
+            <display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+            <!-- <requirements compare_type="or">
+                <requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+            </requirements> -->
+
+            <effect_group>
+                <passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInjuryKnockdown01"/>
+
+                <passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="5.5" force="75">
+                    <requirement name="!EntityTagCompare" tags="trader"/>
+                </triggered_effect>
+                <!-- <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryKnockdown01Cooldown"/> -->
+
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="4"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".knockdownDisplay" operation="add" value="-1"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="0"/>
+            </effect_group>
+        </buff>
+
+        <buff name="buffSnowBallKnockdown" name_key="buffSnowBallKnockdownName" description_key="buffSnowBallKnockdownDesc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+            <damage_type value="knockdown"/>
+            <stack_type value="ignore"/>
+            <duration value="4"/>
+            <display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+            <!-- <requirements compare_type="or">
+                <requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+            </requirements> -->
+
+            <effect_group>
+                <passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInjuryKnockdown01"/>
+
+                <passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="1">
+                    <requirement name="!EntityTagCompare" tags="trader"/>
+                </triggered_effect>
+                <!-- <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryKnockdown01Cooldown"/> -->
+
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="4"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".knockdownDisplay" operation="add" value="-1"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="0"/>
+            </effect_group>
+        </buff>
+
+        <buff name="buffSnowBallKnockdown2" name_key="buffSnowBallKnockdownName" description_key="buffSnowBallKnockdownDesc" icon="ui_game_symbol_stunned" icon_color="255,128,0">
+            <damage_type value="knockdown"/>
+            <stack_type value="ignore"/>
+            <duration value="4"/>
+            <display_value value=".knockdownDisplay"/><display_value_key value="{0}"/>
+            <!-- <requirements compare_type="or">
+                <requirement name="NotHasBuff" buff="buffInjuryKnockdown01Cooldown"/>
+            </requirements> -->
+
+            <effect_group>
+                <passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffInjuryKnockdown01"/>
+
+                <passive_effect name="RunSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="WalkSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="CrouchSpeed" operation="perc_set" value="0"/>
+                <passive_effect name="JumpStrength" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="3" force="5">
+                    <requirement name="!EntityTagCompare" tags="trader"/>
+                </triggered_effect>
+                <!-- <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryKnockdown01Cooldown"/> -->
+
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="4"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".knockdownDisplay" operation="add" value="-1"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".knockdownDisplay" operation="set" value="0"/>
+            </effect_group>
+        </buff>
+    </append>
+</configs>

@@ -1,0 +1,16 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+progression.xml
+-->
+
+<configs>
+
+<append xpath="progression/perks/perk[@name='perkRangersComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,ammoArrowShock,ammoCrossbowBoltShock,ammoBundleArrowShock,ammoBundleCrossbowBoltShock</append>
+<append xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='4,5']/@tags">,ammoArrowShock,ammoCrossbowBoltShock,ammoBundleArrowShock,ammoBundleCrossbowBoltShock</append>
+<append xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='3,5']/@tags">,thrownGrenadeConcussion</append>
+<append xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='5,5']/@tags">,thrownGrenadeShock</append>
+
+</configs>

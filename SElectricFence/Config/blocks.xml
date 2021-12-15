@@ -1,0 +1,47 @@
+<!--
+Sam's Steel Electric Fences
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+	<append xpath="/blocks">
+		<block name="electricfencepoststeel">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="electricfencepost"/>
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="DescriptionKey" value="electricfencepostDesc"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,electricfencepostSchematic"/>
+			<property name="Material" value="Msteel"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="DamageReceived" value="0.75"/>
+			<property name="Model" value="Entities/Electrical/electric_fencePrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="DisplayType" value="blockElectricalMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="10"/>
+			<property name="Buff" value="buffShocked"/>
+			<property name="BuffChance" value="1"/>
+			<property name="Group" value="Tools/Traps,Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="8"/>
+				<property name="resourceElectricParts" value="2"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="0,1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="EconomicValue" value="124"/>
+			<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+	</append>
+</configs>

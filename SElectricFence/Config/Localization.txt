@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+electricfencepoststeel,blocks,Electricity,,,Steel Electric Fence Post,,Elektrozaunpfosten,Poste de valla eléctrica,Poteau de clôture électrique,Palo elettrico per recinzione,電流フェンスポスト,전기 울타리 구역,Słupek elektrycznego pastucha,Poste de cerca elétrica,Часть электрического забора,Elektrikli Çit Kazığı,电围栏柱,電欄柱,Poste de valla eléctrica

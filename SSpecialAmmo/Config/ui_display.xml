@@ -1,0 +1,20 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+ui_display.xml
+-->
+
+<configs>
+
+    <insertAfter xpath="ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']">
+        <item_display_info display_type="ammoArrowShock" display_group="groupAmmo">
+			<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="dShockDuration" title_key="statShockDuration" display_type="Time"/>
+			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+		</item_display_info>
+    </insertAfter>
+    
+</configs>

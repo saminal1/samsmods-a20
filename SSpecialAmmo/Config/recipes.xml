@@ -1,0 +1,59 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+
+    <append xpath="/recipes">
+
+        <recipe name="thrownGrenadeConcussion" count="1" craft_time="16" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceMechanicalParts" count="1"/>
+            <ingredient name="resourceGunPowder" count="28"/>
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceSpring" count="1"/>
+        </recipe>
+
+        <recipe name="thrownGrenadeShock" count="1" craft_time="16" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceMechanicalParts" count="1"/>
+            <ingredient name="resourceElectricParts" count="10"/>
+            <ingredient name="resourceGunPowder" count="14"/>
+            <ingredient name="resourceForgedSteel" count="4"/>
+            <ingredient name="resourceSpring" count="1"/>
+        </recipe>
+
+        <recipe name="ammoArrowShock" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceArrowHeadSteelAP" count="1"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+            <ingredient name="resourceElectricParts" count="2"/>
+        </recipe>
+
+        <recipe name="ammoCrossbowBoltShock" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceArrowHeadSteelAP" count="1"/>
+            <ingredient name="resourceScrapPolymers" count="2"/>
+            <ingredient name="resourceElectricParts" count="2"/>
+        </recipe>
+
+        <recipe name="ammoBundleArrowShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceArrowHeadSteelAP" count="75"/>
+            <ingredient name="resourceScrapPolymers" count="120"/>
+            <ingredient name="resourceElectricParts" count="120"/>
+        </recipe>
+
+        <recipe name="ammoBundleCrossbowBoltShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+            <ingredient name="resourceArrowHeadSteelAP" count="75"/>
+            <ingredient name="resourceScrapPolymers" count="120"/>
+            <ingredient name="resourceElectricParts" count="120"/>
+        </recipe>
+
+        <recipe name="thrownSnowBall" count="1">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="resourceRockSmall" count="1"/>
+        </recipe>
+
+    </append>
+
+</configs>

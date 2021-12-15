@@ -1,0 +1,34 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+loot.xml
+-->
+
+<configs>
+
+    <append xpath="lootcontainers/lootgroup[@name='groupWeaponsT2_Demolitionist']">
+        <item name="thrownGrenadeConcussion" prob='0.5' count="1,2"/>
+    </append>
+
+    <append xpath="lootcontainers/lootgroup[@name='groupWeaponsT3_Demolitionist']">
+        <item name="thrownGrenadeShock" prob='0.3' count="1,2"/>
+    </append>
+
+    <append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+        <item name="thrownGrenadeConcussionSchematic" prob='0.5'/>
+        <item name="thrownGrenadeShockSchematic" prob='0.3'/>
+    </append>
+
+    <append xpath="lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+        <item name="ammoArrowShock" count="2,5"/>
+        <item name="ammoCrossbowBoltShock" count="2,5"/>
+    </append>
+
+    <append xpath="lootcontainers/lootgroup[@name='groupQuestAmmo']">
+    <item name="ammoArrowShock" count="25" loot_prob_template="QuestT3Prob"/>
+	<item name="ammoCrossbowBoltShock" count="25" loot_prob_template="QuestT3Prob"/>
+    </append>
+
+</configs>

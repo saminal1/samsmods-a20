@@ -1,0 +1,222 @@
+<!--
+Sam's Special Ammo
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+
+    <append xpath="/items">
+
+        <item name="thrownGrenadeConcussion"> <!-- T2 demolitions (perk 3) -->
+            <property name="Extends" value="thrownGrenadeContact" param1="ExplodeOnHit"/>
+            <property name="CustomIcon" value="thrownGrenadeContact"/>
+            <property name="CustomIconTint" value="33ccff"/>
+            <property name="DescriptionKey" value="thrownGrenadeConcussionDesc"/>
+            <property name="Meshfile" value="#Other/Items?Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+            <property name="UnlockedBy" value="perkDemolitionsExpert,thrownGrenadeConcussionSchematic"/>
+            <property name="DisplayType" value="ammoGrenade"/>
+            <property name="Explosion.ParticleIndex" value="9"/>
+            <property name="Explosion.RadiusBlocks" value="6"/>
+            <property name="Explosion.RadiusEntities" value="8"/>
+            <property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+            <property name="Explosion.DamageBonus.water" value="0"/>
+            <property name="Explosion.DamageBonus.metal" value="0.5"/>
+            <property name="Explosion.DamageBonus.wood" value="0"/>
+            <property name="Explosion.DamageBonus.stone" value="0"/>
+            <property name="Explosion.BlastPower" value="25"/>
+            <property name="FuseTime" value="3"/>
+            <property name="StickPercent" value=".3"/>
+            <effect_group tiered="false">
+                <passive_effect name="BlockDamage" operation="base_set" value="2"/><display_value name="dExDamageBlock" value="2"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="10"/><display_value name="dExDamageEntity" value="10"/>
+                <display_value name="dExRadius" value="6"/>
+                <display_value name="dFuseTime" value="3"/>
+                <triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" fireOneBuff="true" buff="buffConcussionGrenadeKnockdown,buffConcussionGrenadeKnockdown2" weights="2,1"/>
+            </effect_group>
+        </item>
+
+        <item name="thrownGrenadeShock"> <!-- T2 demolitions (perk 3) -->
+            <property name="Extends" value="thrownGrenadeContact" param1="ExplodeOnHit"/>
+            <property name="CustomIcon" value="thrownGrenadeContact"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="DescriptionKey" value="thrownGrenadeShockDesc"/>
+            <property name="Meshfile" value="#Other/Items?Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+            <property name="UnlockedBy" value="perkDemolitionsExpert,thrownGrenadeShockSchematic"/>
+            <property name="DisplayType" value="ammoGrenade"/>
+            <property name="Explosion.ParticleIndex" value="6"/>
+            <property name="Explosion.RadiusBlocks" value="6"/>
+            <property name="Explosion.RadiusEntities" value="8"/>
+            <property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+            <property name="Explosion.DamageBonus.water" value="0"/>
+            <property name="Explosion.DamageBonus.metal" value="0.5"/>
+            <property name="Explosion.DamageBonus.wood" value="0"/>
+            <property name="Explosion.DamageBonus.stone" value="0"/>
+            <property name="Explosion.BlastPower" value="25"/>
+            <property name="FuseTime" value="3"/>
+            <property name="StickPercent" value=".3"/>
+            <effect_group tiered="false">
+                <passive_effect name="BlockDamage" operation="base_set" value="2"/><display_value name="dExDamageBlock" value="2"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="10"/><display_value name="dExDamageEntity" value="10"/>
+                <display_value name="dExRadius" value="6"/>
+                <display_value name="dFuseTime" value="3"/>
+                <triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffShocked"/>
+            </effect_group>
+        </item>
+
+        <item name="ammoArrowShock">
+            <property name="Extends" value="ammoArrowSteelAP"/>
+            <property name="CustomIcon" value="ammoArrowSteelAP"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="DescriptionKey" value="ammoArrowShockDesc"/>
+            <property name="DisplayType" value="ammoArrowShock"/>
+            <property name="UsableUnderwater" value="false"/>
+            <property name="EconomicValue" value="44"/>
+            <property name="EconomicBundleSize" value="1"/>
+            <property name="Damage_type" value="Electrical"/>
+            <property name="StickyOffset" value=".7"/>
+            <property name="UnlockedBy" value="PerkRangersComplete"/>
+            <property class="Action1">
+                <property name="Gravity" value="-5"/>
+            </property>
+
+            <effect_group name="ammoArrowShock" tiered="false">
+                <passive_effect name="EntityDamage" operation="base_set" value="25"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="6"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+                <passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+                <passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffShockedWeaponDuration" operation="set" value="6"/>
+                <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShockedWeapon"/>
+
+                <display_value name="dShockDuration" value="5"/>
+            </effect_group>
+        </item>
+        
+        <item name="ammoCrossbowBoltShock">
+            <property name="Extends" value="ammoCrossbowBoltSteelAP"/>
+            <property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="DescriptionKey" value="ammoCrossbowBoltShockDesc"/>
+            <property name="DisplayType" value="ammoArrowShock"/>
+            <property name="UsableUnderwater" value="false"/>
+            <property name="EconomicValue" value="44"/>
+            <property name="EconomicBundleSize" value="1"/>
+            <property name="Damage_type" value="Electrical"/>
+            <property name="StickyOffset" value=".7"/>
+            <property name="UnlockedBy" value="PerkRangersComplete"/>
+            <property class="Action1">
+                <property name="Gravity" value="-5"/>
+            </property>
+
+            <effect_group name="ammoCrossbowBoltShock" tiered="false">
+                <passive_effect name="EntityDamage" operation="base_set" value="45"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="6"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+                <passive_effect name="ProjectileVelocity" operation="base_set" value="82"/>
+                <passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+
+                <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffShockedWeaponDuration" operation="set" value="6"/>
+                <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShockedWeapon"/>
+
+                <display_value name="dShockDuration" value="5"/>
+            </effect_group>
+        </item>
+
+        <item name="ammoBundleArrowShock">
+            <property name="Extends" value="ammoBundleArrowStone"/>
+            <property name="CustomIcon" value="ammoArrowSteelAP"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="EconomicValue" value="4400"/>
+            <property class="Action0">
+                <property name="Create_item" value="ammoArrowShock"/>
+                <property name="Create_item_count" value="75"/>
+            </property>
+        </item>
+
+        <item name="ammoBundleCrossbowBoltShock">
+            <property name="Extends" value="ammoBundleArrowStone"/>
+            <property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="EconomicValue" value="4400"/>
+            <property class="Action0">
+                <property name="Create_item" value="ammoCrossbowBoltShock"/>
+                <property name="Create_item_count" value="75"/>
+            </property>
+        </item>
+
+        <item name="thrownSnowBall">
+            <property name="CustomIcon" value="resourceSnowBall"/>
+            <property name="CustomIconTint" value="dddddd"/>
+            <property name="DescriptionKey" value="thrownSnowBallDesc"/>
+            <property name="Class" value="ItemClassTimeBomb"/>
+            <property name="ExplodeOnHit" value="true"/>
+            <property name="HoldType" value="40"/>
+            <property name="AlwaysActive" value="true"/>
+            <property name="Meshfile" value="#Other/Items?Misc/snowballPrefab.prefab"/>
+            <property name="HandMeshfile" value="#Other/Items?Misc/snowball_FP_Prefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/snowballPrefab.prefab"/>
+            <!-- <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/> -->
+            <property name="DropScale" value="1.5"/>
+            <property name="Material" value="MresourceSnowBall"/>
+            <property name="Explosion.ParticleIndex" value="20"/>
+            <property name="Explosion.RadiusBlocks" value="1"/>
+            <property name="Explosion.RadiusEntities" value="1"/>
+            <property name="Weight" value="5"/>
+            <property name="Stacknumber" value="25"/> <!-- STK resource -->
+            <property name="EconomicValue" value="5"/>
+            <property name="EconomicBundleSize" value="150"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="FuseTime" value="20000"/>
+            <property class="Action0">
+                <property name="Class" value="ThrowAway"/>
+                <property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+                <property name="Throw_strength_default" value="8"/>
+                <property name="Throw_strength_max" value="60"/>
+                <property name="Max_strain_time" value="1.25"/>
+                <property name="Sound_start" value="swoosh"/>
+            </property>
+            <effect_group tiered="false">
+                <passive_effect name="BlockDamage" operation="base_set" value="0"/><display_value name="dExDamageBlock" value="0"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="5"/><display_value name="dExDamageEntity" value="5"/>
+                <triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" fireOneBuff="true" buff="buffSnowBallKnockdown,buffSnowBallKnockdown2" weights="2,1"/>
+            </effect_group>
+            <property name="ThrowableDecoy" value="true"/>
+            <property name="Group" value="Ammo/Weapons"/>
+        </item>
+
+        <item name="thrownGrenadeConcussionSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="thrownGrenadeContact"/>
+            <property name="CustomIconTint" value="3377cc"/>
+            <property name="Unlocks" value="thrownGrenadeConcussion"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeConcussion" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        
+        <item name="thrownGrenadeShockSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="thrownGrenadeContact"/>
+            <property name="CustomIconTint" value="00eeee"/>
+            <property name="Unlocks" value="thrownGrenadeShock"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeShock" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+
+    </append>
+
+    <append xpath="items/item[@name='gunBowT1WoodenBow' or @name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowShock</append>
+    <append xpath="items/item[@name='gunBowT1IronCrossbow' or @name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltShock</append>
+
+</configs>
