@@ -1,0 +1,108 @@
+<!--
+Sam's Outback Builder Boosts
+v19.5.1
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+
+    <!-- SJ: Multiply terrain blocks by ten -->
+    <set xpath="blocks/block[@name='terrStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">550</set>
+    <set xpath="blocks/block[@name='terrDirt']/drop[@event='Harvest' and @name='resourceClayLump']/@count">220</set>
+    <set xpath="blocks/block[@name='terrForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">220</set>
+    <set xpath="blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">220</set>
+    <set xpath="blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">110</set>
+    <set xpath="blocks/block[@name='terrDesertGround']/drop[@event='Harvest' and @name='resourceClayLump']/@count">20</set>
+    <set xpath="blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">40</set>
+    <set xpath="blocks/block[@name='terrDestroyedStone']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">120</set>
+    <set xpath="blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceCrushedSand']/@count">80</set>
+    <set xpath="blocks/block[@name='terrGravel']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">90</set>
+    <set xpath="blocks/block[@name='terrAsphalt']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">270</set>
+    <set xpath="blocks/block[@name='terrConcrete']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">270</set>
+    <set xpath="blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">1050</set>
+    <set xpath="blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">140</set>
+    <set xpath="blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">500</set>
+    <set xpath="blocks/block[@name='terrOreLead']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">140</set>
+    <set xpath="blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceCoal']/@count">500</set>
+    <set xpath="blocks/block[@name='terrOreCoal']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">1400</set>
+    <set xpath="blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">500</set>
+    <set xpath="blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">140</set>
+    <set xpath="blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceOilShale']/@count">500</set>
+    <set xpath="blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">140</set>
+
+    <!-- SJ: Add surface boulders to multiplier -->
+
+    <set xpath="blocks/block[starts-with(@name, 'rockResource')]/drop[@event='Harvest' and @name='resourceRockSmall']/@count">220</set>
+    <set xpath="blocks/block[@name='oreIronBoulder']/drop[@event='Harvest' and @name='resourceScrapIron']/@count">1050</set>
+    <set xpath="blocks/block[@name='oreLeadBoulder']/drop[@event='Harvest' and @name='resourceScrapLead']/@count">500</set>
+    <set xpath="blocks/block[@name='oreCoalBoulder']/drop[@event='Harvest' and @name='resourceCoal']/@count">500</set>
+    <set xpath="blocks/block[@name='orePotassiumNitrateBoulder']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">500</set>
+    <set xpath="blocks/block[@name='oreShaleBoulder']/drop[@event='Harvest' and @name='resourceOilShale']/@count">500</set>
+
+    <!-- SJ: Increase tree wood yield appropriately per size - approx 5x -->
+
+    <set xpath="blocks/block[@name='treeDeadPineLeaf' or @name='treeSnowyDeadBush' or @name='treeAzalea' or @name='treePlainsTree']/drop[@event='Harvest' and @name='resourceWood']/@count">10</set>
+    <set xpath="blocks/block[@name='treeStump' or @name='treeJuniper4m' or @name='treeDeadTree01' or @name='treeDeadTree02' or @name='treeOakSml01' or @name='treePlantedOak08m' or @name='treePlainsTree2' or @name='treeMountainPine12m' or @name='treePlantedMountainPine12m' or @name='treeWinterEverGreen' or @name='treePlantedWinterPine6m' or @name='treeBurntMaple01']/drop[@event='Harvest' and @name='resourceWood']/@count">150</set>
+    <set xpath="blocks/block[@name='treeOakMed01' or @name='treePlantedOak16m' or @name='treeMountainPine19m' or @name='treePlantedMountainPine19m' or @name='treeWinterPine13m' or @name='treePlantedWinterPine13m']/drop[@event='Harvest' and @name='resourceWood']/@count">350</set>
+    <set xpath="blocks/block[@name='treeOakMed02' or @name='treePlantedOak27m' or @name='treeMountainPine27m' or @name='treeMountainPine31m' or @name='treeMountainPineDry21m' or @name='treePineBurntMed' or @name='treePineBurntFullMed' or @name='treePlantedMountainPine27m' or @name='treeWinterPine19m' or @name='treePlantedWinterPine19m' or @name='treeBurntMaple02']/drop[@event='Harvest' and @name='resourceWood']/@count">550</set>
+    <set xpath="blocks/block[@name='treeOakLrg01' or @name='treePlantedOak41m' or @name='treeMountainPine41m' or @name='treeMountainPine48m' or @name='treePineBurntLrg' or @name='treeFirLrg01' or @name='treePlantedMountainPine41m' or @name='treeWinterPine28m' or @name='treePlantedWinterPine28m' or @name='treeBurntMaple03']/drop[@event='Harvest' and @name='resourceWood']/@count">800</set>
+
+    <!-- SJ: Add random helpers and saplings for trees -->
+
+    <append xpath="/blocks">
+        <block name="treeOakVariantHelper">
+            <property name="Extends" value="woodFrameBlock"/>
+            <property name="CustomIcon" value="treeOakSml01"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="treeOakSml01,treeOakMed01,treeOakMed02,treeOakLrg01"/>
+        </block>
+
+        <block name="treeMountainPineVariantHelper">
+            <property name="Extends" value="woodFrameBlock"/>
+            <property name="CustomIcon" value="treeMountainPine12m"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="treeMountainPine12m,treeMountainPine19m,treeMountainPine27m,treeMountainPine31m,treeMountainPine41m,treeMountainPine48m,treeMountainPineDry21m,treeFirLrg01"/>
+        </block>
+
+        <block name="treeCactusVariantHelper">
+            <property name="Extends" value="woodFrameBlock"/>
+            <property name="CustomIcon" value="treeCactus01"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="treeCactus01,treeCactus02,treeCactus03,treeCactus04,treeCactus05,treeCactus06"/>
+        </block>
+
+        <block name="treeWinterVariantHelper">
+            <property name="Extends" value="woodFrameBlock"/>
+            <property name="CustomIcon" value="treeWinterEverGreen"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="treeWinterEverGreen,treeWinterPine13m,treeWinterPine19m,treeWinterPine28m"/>
+        </block>
+
+        <block name="treeSmallVariantHelper">
+            <property name="Extends" value="woodFrameBlock"/>
+            <property name="CustomIcon" value="treePlainsTree"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="treePlainsTree,treePlainsTree2,treeDeadPineLeaf,treeSnowyDeadBush,treeJuniper4m,treeAzalea,treeStump"/>
+        </block>
+    </append>
+    <append xpath="blocks/block[@name='solarbank']">
+        <property name="UnlockedBy" value="perkAdvancedEngineering,solarbankSchematic"/>
+    </append>
+</configs>

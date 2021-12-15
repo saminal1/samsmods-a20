@@ -70,6 +70,17 @@ blocks.xml
             <property name="FilterTags" value="foutdoor,ftrees,fdesign"/>
         </block>
 
+        <block name="treeCactusRandomHelper">
+            <property name="Extends" value="treeOakMed01"/>
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="DescriptionKey" value="treeRandomHelperGroupDesc"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property name="CustomIcon" value="treeCactus04"/> <property name="CustomIconTint" value="ff8080"/>
+            <property name="MultiBlockDim" value="1,1,1"/>
+            <property name="FilterTags" value="foutdoor,ftrees,fdesign"/>
+        </block>
+
         <block name="treeBurntWastelandRandomHelper">
             <property name="Extends" value="treeOakMed01"/>
             <property name="PlantGrowing.FertileLevel" value="0"/>
@@ -175,6 +186,30 @@ blocks.xml
             <property name="SortOrder2" value="0350"/> <!-- SortTree -->
             <property name="ActivationDistance" value="4"/>
         </block>
+
+        <block name="treeCactusSapling">
+            <property name="Extends" value="treeMasterGrowing" param1="CustomIcon,Harvest,MultiBlockDim"/>
+            <property name="DescriptionKey" value="treePlantedSeed1mDesc"/>
+            <property name="CustomIcon" value="treeCactus04"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="MaxDamage" value="50"/>
+            <property name="Material" value="Mplants"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Model" value="Entities/Plants/cactus04Prefab"/>
+            <property name="ModelOffset" value="0,0.45,0"/>
+            <property name="Collide" value="melee"/>
+            <property name="FallOver" value="false"/>
+            <property name="BigDecorationRadius" value="4"/>
+            <property name="PlantGrowing.Next" value="treeCactusRandomHelper"/>
+            <property name="EconomicValue" value="12"/>
+            <property name="EconomicBundleSize" value="5"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="Group" value="Resources"/>
+            <property name="ParticleOnDeath" value="treeGib_sapling"/>
+            <property name="SortOrder2" value="0350"/>
+            <property name="ActivationDistance" value="4"/>
+        </block>
+    
     </insertBefore>
 
     <!-- SJ: Set RWG trees to downgrade to saplings - remove falling animation because the falling tree gets in the way of the sapling -->
@@ -199,4 +234,8 @@ blocks.xml
         <property name="DowngradeBlock" value="treeBurntWastelandSapling"/>
     </append>
 
+    <append xpath="/blocks/block[(starts-with(@name, 'treeCactus') and not (contains(@name, 'Sapling') or contains(@name, 'RandomHelper')))]">
+        <property name="FallOver" value="false"/>
+        <property name="DowngradeBlock" value="treeCactusSapling"/>
+    </append>
 </configs>

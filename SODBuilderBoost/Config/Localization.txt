@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,english
+treeOakVariantHelper,blocks,block,,Oak Trees
+treeMountainPineVariantHelper,blocks,block,,Pine Trees
+treeCactusVariantHelper,blocks,block,,Cactus Trees
+treeWinterVariantHelper,blocks,block,,Winter Trees
+treeSmallVariantHelper,blocks,block,,Small Trees and Shrubs
+solarbankSchematic,items,schematic,,Solar Power Schematic
+perkAdvancedEngineeringRank4LongDesc,progression,perk Int,,"Learn to craft shotgun turrets for short range concentrated base defense, battery banks, solar power and nail guns. Gain 35% XP from electrical trap kills.\nAll forge recipes cost 15% less, crafting Forged Steel and electrical devices costs 25% less."

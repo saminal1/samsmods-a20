@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Sam's Outback Decay Builder Boosts" />
+		<Description value="Increases the resource yield and crafting speed for the OD Builder server. Adds random tree saplings, tree variant blocks and fertile soil." />
+		<Author value="Saminal" />
+		<Version value="20.0.0" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+		<!-- Note - REQUIRES Sam's Sustainable Forestry - https://github.com/saminal1/samsmods-a20/tree/main/SSustainableForestry -->
+	</ModInfo>
+</xml>

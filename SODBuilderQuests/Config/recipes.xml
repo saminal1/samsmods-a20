@@ -1,0 +1,13 @@
+<!--
+Sam's Outback Decay Builder Quests
+v19.2.1
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+
+<set xpath="recipes/recipe[@name='chemistryStation']/ingredient[@name='resourceAcid']/@count">1</set>
+
+</configs>

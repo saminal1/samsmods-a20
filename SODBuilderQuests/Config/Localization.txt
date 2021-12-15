@@ -1,0 +1,22 @@
+Key,File,Type,english
+quest_ODBuilder,Quest,Quest Info,Outback Decay Builder
+quest_ODBuilder_offer,Quest,Quest Info,"Welcome to Outback Decay, Builder. We've set you some tasks, and in exchange for completing them we'll give you a headstart with some tools you'll need to carve your name on this landscape."
+quest_ODBuilder1,Quest,Quest Info,Outback Decay Builder 1/6
+quest_ODBuilder1_subtitle,Quest,Quest Info,Craft a Forge
+quest_ODBuilder1_description,Quest,Quest Info,"Welcome to Outback Decay, Builder. We've set you some tasks, and in exchange for completing them we'll give you a headstart with some tools you'll need to carve your name on this landscape. First, you'll need a forge - there's going to be a lot of smelting in your future."
+quest_ODBuilder1_description_title,Journal Tip,,Outback Decay Builder
+quest_ODBuilder2,Quest,Quest Info,Outback Decay Builder 2/6
+quest_ODBuilder2_subtitle,Quest,Quest Info,Craft a Workbench
+quest_ODBuilder2_description,Quest,Quest Info,"You're not going to be able to make much without a workbench."
+quest_ODBuilder3,Quest,Quest Info,Outback Decay Builder 3/6
+quest_ODBuilder3_subtitle,Quest,Quest Info,Craft a Chemistry Station
+quest_ODBuilder3_description,Quest,Quest Info,"Who doesn't love a bit of DIY chemistry? We trust you'll use it responsibly."
+quest_ODBuilder4,Quest,Quest Info,Outback Decay Builder 4/6
+quest_ODBuilder4_subtitle,Quest,Quest Info,Craft a Cement Mixer
+quest_ODBuilder4_description,Quest,Quest Info,"Have a cup of cement and harden up."
+quest_ODBuilder5,Quest,Quest Info,Outback Decay Builder 5/6
+quest_ODBuilder5_subtitle,Quest,Quest Info,Assemble a Toolkit
+quest_ODBuilder5_description,Quest,Quest Info,"You've kitted out your base, now it's time to kit out your toolbelt."
+quest_ODBuilder6,Quest,Quest Info,Outback Decay Builder 6/6
+quest_ODBuilder6_subtitle,Quest,Quest Info,Equip Your Forge
+quest_ODBuilder6_description,Quest,Quest Info,"One last thing - It's crucible time, baby."

@@ -49,5 +49,14 @@ recipes.xml
             </effect_group>
         </recipe>
 
+        <recipe name="terrDirtFertile" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+            <ingredient name="foodRottingFlesh" count="10"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="25"/>
+            <ingredient name="resourceClayLump" count="100"/>
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
+            </effect_group>
+        </recipe>
+
     </append>
 </configs>

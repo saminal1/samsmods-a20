@@ -1,0 +1,67 @@
+<!--
+Sam's Outback Decay Builder Boosts
+v19.5.1
+by saminal
+untested, good luck
+
+recipes.xml
+-->
+
+<configs>
+
+    <append xpath="/recipes">
+        <recipe name="treeBurntWastelandSapling" count="1" craft_time="5">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="resourceCoal" count="2"/>
+            <ingredient name="resourceWood" count="1"/>
+	        <ingredient name="resourceYuccaFibers" count="2"/>
+        </recipe>
+
+        <recipe name="treeCactusSapling" count="1" craft_time="5">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="resourceCrushedSand" count="2"/>
+            <ingredient name="resourceYuccaFibers" count="5"/>
+        </recipe>
+
+        <recipe name="treeOakVariantHelper" count="1" craft_time="30">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="treeOakSapling" count="1"/>
+        </recipe>
+
+        <recipe name="treeMountainPineVariantHelper" count="1" craft_time="30">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="treeMountainPineSapling" count="1"/>
+        </recipe>
+
+        <recipe name="treeCactusVariantHelper" count="1" craft_time="30">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="resourceCrushedSand" count="2"/>
+            <ingredient name="resourceYuccaFibers" count="5"/>
+        </recipe>
+
+        <recipe name="treeWinterVariantHelper" count="1" craft_time="30">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="treeWinterPineSapling" count="1"/>
+        </recipe>
+
+        <recipe name="treeSmallVariantHelper" count="1" craft_time="30">
+            <ingredient name="resourceClayLump" count="2"/>
+            <ingredient name="resourceWood" count="2"/>
+            <ingredient name="resourceYuccaFibers" count="5"/>
+        </recipe>
+
+        <recipe name="solarbank" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
+            <ingredient name="resourceForgedSteel" count="20"/>
+            <ingredient name="resourceElectricParts" count="15"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+
+        <recipe name="solarCell" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
+            <ingredient name="resourceForgedSteel" count="5"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+            <ingredient name="resourceElectricParts" count="10"/>
+            <ingredient name="resourceBrokenGlass" count="25"/>
+        </recipe>
+    </append>
+    
+</configs>

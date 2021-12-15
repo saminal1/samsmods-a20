@@ -1,0 +1,28 @@
+<!--
+Sam's Outback Decay Builder Boosts
+v20.0.0
+by saminal
+
+entityclasses.xml
+-->
+
+<configs>
+
+    <!-- SJ: Increase crafting speed by 10x - subtract 90% from base craftingtime. -->
+
+    <insertAfter xpath="entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterMax']">
+        <passive_effect name="CraftingTime" operation="perc_add" value="-0.9"/>
+    </insertAfter>
+    
+    <!-- SJ: Half base water / food loss rate -->
+
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterChangeOT'][1]/@value">0.00555</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='FoodChangeOT'][1]/@value">0.00416</set>
+
+    <!-- SJ: Half water / food loss for stamina / health recovery -->
+
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterLossPerHealthPointGained']/@value">0.03</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.00226</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0.00204</set>
+    
+</configs>

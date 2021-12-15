@@ -1,0 +1,15 @@
+<!--
+Sam's Outback Builder Boosts
+v19.5.1
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+
+    <append xpath="lootcontainers/lootgroup[@name='schematicsElectrical']">
+        <item name="solarbankSchematic"/>
+    </append>
+    
+</configs>

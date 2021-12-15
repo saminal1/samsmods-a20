@@ -1,0 +1,194 @@
+<!--
+Sam's Outback Decay Builder Quests
+v19.2.1
+by saminal
+
+quests.xml
+-->
+
+<configs>
+
+    <!-- SJ: Modify White River Citizen (Journey to Settlement) quest to sed you to the nearest trader even if it's in the snow or desert -->
+
+    <remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/objective[@type='Goto']"/>
+    <insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/action[@type='ShowTip']">
+        <objective type="Goto" id="trader" value="5" phase="1">
+			<!-- <property name="biome_filter_type" value="OnlyBiome" /> -->
+			<!-- <property name="biome_filter" value="pine_forest,desert" /> -->
+			<property name="biome_filter_type" value="ExcludeBiome" />
+			<property name="biome_filter" value="wasteland" />
+			<property name="nav_object" value="go_to_trader" />
+		</objective>
+    </insertAfter>
+
+    <!-- SJ: Modify White River Citizen quest to give you a forge schematic and a new quest line -->
+
+    <append xpath="quests/quest[@id='quest_whiteRiverCitizen1']">
+        <reward type="Quest" id="quest_ODBuilder1"/>
+        <reward type="Item" id="forgeSchematic" value="1"/>
+    </append>
+
+    <insertAfter xpath="quests/quest[@id='quest_whiteRiverCitizen1']">
+        <quest id="quest_ODBuilder1">
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder1"/>
+            <property name="subtitle" value="Craft a Forge"/>
+            <property name="subtitle_key" value="quest_ODBuilder1_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder1_description"/>
+            <property name="icon" value="ui_game_symbol_forge"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <action type="ShowTip" value="quest_ODBuilder1_description">
+		    	<property name="delay" value="3"/>
+	    	</action>
+
+            <objective type="FetchKeep" id="resourceRockSmall" value="50" phase="1"/>
+            <objective type="FetchKeep" id="resourceClayLump" value="60" phase="1"/>
+            <objective type="FetchKeep" id="resourceLeather" value="10" phase="1"/>
+            <objective type="FetchKeep" id="resourceDuctTape" value="3" phase="1"/>
+            <objective type="FetchKeep" id="resourceMetalPipe" value="3" phase="1"/>
+
+            <objective type="FetchKeep" id="forge" value="1" phase="2"/>
+            <objective type="BlockPlace" id="forge" value="1" phase="2"/>
+
+            <reward type="Quest" id="quest_ODBuilder2"/>
+            <reward type="Item" id="workbenchSchematic" value="1"/>
+            <reward type="Item" id="meleeToolSalvageT1Wrench" value="1"/>
+            <reward type="Item" id="meleeToolRepairT1ClawHammer" value="1"/>
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_ODBuilder2">
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder2"/>
+            <property name="subtitle" value="Craft a Workbench"/>
+            <property name="subtitle_key" value="quest_ODBuilder2_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder2_description"/>
+            <property name="icon" value="ui_game_symbol_workbench"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <objective type="FetchKeep" id="resourceForgedIron" value="25" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1"/>
+            <objective type="FetchKeep" id="meleeToolSalvageT1Wrench" value="1" phase="1"/>
+            <objective type="FetchKeep" id="meleeToolRepairT1ClawHammer" value="1" phase="1"/>
+            <objective type="FetchKeep" id="resourceWood" value="50" phase="1"/>
+
+            <objective type="FetchKeep" id="workbench" value="1" phase="2"/>
+            <objective type="BlockPlace" id="workbench" value="1" phase="2"/>
+
+            <reward type="Quest" id="quest_ODBuilder3"/>
+            <reward type="Item" id="chemistryStationSchematic" value="1"/>
+            <reward type="Item" id="toolBeaker" value="1"/>
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_ODBuilder3">
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder3"/>
+            <property name="subtitle" value="Craft a Chemistry Station"/>
+            <property name="subtitle_key" value="quest_ODBuilder3_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder3_description"/>
+            <property name="icon" value="ui_game_symbol_chemistry"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <objective type="FetchKeep" id="toolBeaker" value="1" phase="1"/>
+            <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
+            <objective type="FetchKeep" id="toolCookingPot" value="3" phase="1"/>
+            <objective type="FetchKeep" id="resourceMetalPipe" value="30" phase="1"/>
+            <objective type="FetchKeep" id="resourceAcid" value="5" phase="1"/>
+
+            <objective type="FetchKeep" id="chemistryStation" value="1" phase="2"/>
+            <objective type="BlockPlace" id="chemistryStation" value="1" phase="2"/>
+
+            <reward type="Quest" id="quest_ODBuilder4"/>
+            <reward type="Item" id="cementMixerSchematic" value="1"/>
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_ODBuilder4">
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder4"/>
+            <property name="subtitle" value="Craft a Cement Mixer"/>
+            <property name="subtitle_key" value="quest_ODBuilder4_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder4_description"/>
+            <property name="icon" value="ui_game_symbol_cement"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <objective type="FetchKeep" id="resourceForgedIron" value="25" phase="1"/>
+            <objective type="FetchKeep" id="resourceSpring" value="4" phase="1"/>
+            <objective type="FetchKeep" id="smallEngine" value="1" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
+
+            <objective type="FetchKeep" id="cementMixer" value="1" phase="2"/>
+            <objective type="BlockPlace" id="cementMixer" value="1" phase="2"/>
+
+            <reward type="Quest" id="quest_ODBuilder5"/>
+            <reward type="Item" id="meleeToolIronSetSchematic" value="1"/>
+            <reward type="Item" id="meleeToolSalvageT1WrenchSchematic" value="1"/>
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_ODBuilder5">
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder5"/>
+            <property name="subtitle" value="Assemble A Toolkit"/>
+            <property name="subtitle_key" value="quest_ODBuilder5_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder5_description"/>
+            <property name="icon" value="ui_game_symbol_hammer"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <objective type="FetchKeep" id="resourceForgedIron" value="80" phase="1"/>
+            <objective type="FetchKeep" id="resourceWood" value="38" phase="1"/>
+            <objective type="FetchKeep" id="resourceLeather" value="9" phase="1"/>
+            <objective type="FetchKeep" id="resourceDuctTape" value="10" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="4" phase="1"/>
+
+            <objective type="FetchKeep" id="meleeToolRepairT1ClawHammer" value="1" phase="2"/>
+            <objective type="FetchKeep" id="meleeToolAxeT1IronFireaxe" value="1" phase="2"/>
+            <objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="2"/>
+            <objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="2"/>
+            <objective type="FetchKeep" id="meleeToolSalvageT1Wrench" value="1" phase="2"/>
+            <objective type="FetchKeep" id="meleeToolPaintTool" value="1" phase="2"/>
+
+            <reward type="Quest" id="quest_ODBuilder6"/>
+            <reward type="Item" id="toolForgeCrucibleSchematic" value="1"/>
+            <reward type="Item" id="toolAnvilSchematic" value="1"/>
+            <reward type="Item" id="toolBellowsSchematic" value="1"/>
+            <reward type="SkillPoints" value="1"/>
+        </quest>
+
+        <quest id="quest_ODBuilder6">
+
+            <property name="group_name_key" value="quest_ODBuilder"/>
+            <property name="name_key" value="quest_ODBuilder6"/>
+            <property name="subtitle" value="Equip Your Forge"/>
+            <property name="subtitle_key" value="quest_ODBuilder6_subtitle"/>
+            <property name="description_key" value="quest_ODBuilder6_description"/>
+            <property name="icon" value="ui_game_symbol_forge"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer_key" value="quest_ODBuilder_offer"/>
+            <property name="shareable" value="false"/>
+
+            <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
+            <objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1"/>
+            <objective type="FetchKeep" id="resourceRockSmall" value="1200" phase="1"/>
+            <objective type="FetchKeep" id="resourceOil" value="20" phase="1"/>
+            <objective type="FetchKeep" id="resourceClayLump" value="900" phase="1"/>
+                       
+            <objective type="FetchKeep" id="toolForgeCrucible" value="1" phase="2"/>
+            
+            <reward type="Item" id="generatorbankSchematic" value="1"/>
+            <reward type="SkillPoints" value="2"/>
+        </quest>
+    </insertAfter>
+</configs>

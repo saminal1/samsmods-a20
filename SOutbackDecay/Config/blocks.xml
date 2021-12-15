@@ -1,0 +1,41 @@
+<!--
+Sam's Outback Decay
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+    <!-- SJ: Add fertile soil block to let builders place plants on terrain -->
+
+    <append xpath="/blocks">
+        <block name="terrDirtFertile">
+            <property name="CustomIcon" value="resourceFertilizer"/>
+            <property name="DescriptionKey" value="terrDirtFertileDesc"/>
+            <property name="Material" value="Mfarmland"/>
+            <property name="Shape" value="Terrain"/>
+            <property name="Mesh" value="terrain"/>
+            <property name="Texture" value="2"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="LPHardnessScale" value="2"/>
+            <property name="Map.Color" value="20,50,21"/>
+            <property class="RepairItems">
+                <property name="resourceClayLump" value="14"/>
+            </property>
+            <drop event="Harvest" name="resourceClayLump" count="0" tag="oreWoodHarvest"/>
+	        <drop event="Harvest" name="resourcePotassiumNitratePowder" count="0" tag="oreWoodHarvest"/>
+            <drop event="Destroy" name="terrDirtFertile" count="1"/>
+            <drop event="Fall" name="terrDirt" count="1" prob="0.25" stick_chance="1"/>
+            <drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+            <property name="CanMobsSpawnOn" value="true"/>
+            <property name="EconomicValue" value="5"/>
+            <property name="EconomicBundleSize" value="1"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="FilterTags" value="fterrain"/>
+            <property name="SortOrder1" value="d0k0"/>
+            <property name="SortOrder2" value="0050"/>
+            <property name="DisplayType" value="blockTerrainFertile"/>
+        </block>
+    </append>
+
+</configs>
