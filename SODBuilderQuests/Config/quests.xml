@@ -1,6 +1,6 @@
 <!--
 Sam's Outback Decay Builder Quests
-v19.2.1
+v20.0.0
 by saminal
 
 quests.xml
@@ -101,7 +101,7 @@ quests.xml
             <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
             <objective type="FetchKeep" id="toolCookingPot" value="3" phase="1"/>
             <objective type="FetchKeep" id="resourceMetalPipe" value="30" phase="1"/>
-            <objective type="FetchKeep" id="resourceAcid" value="5" phase="1"/>
+            <objective type="FetchKeep" id="resourceAcid" value="1" phase="1"/>
 
             <objective type="FetchKeep" id="chemistryStation" value="1" phase="2"/>
             <objective type="BlockPlace" id="chemistryStation" value="1" phase="2"/>
