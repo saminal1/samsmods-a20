@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+streetLight01_Council,blocks,Light,,,Council Streetlight
+recessedLight_Council,blocks,Light,,,Council Recessed Light
+lightCouncilGroupDesc,blocks,Light,,,"These streetlights require no power, so they can be placed by admins to light up a town and require no maintenance."
+wirelessWireRelay_Council,blocks,Electrical,,,Council Wireless Wire Relay
+electrictimerrelay_Council,blocks,Electrical,,,Council Timer Relay
+wireRelay_CouncilDesc,,blocks,Electrical,,,"These relays require no power, so they can be used to pass electricity around the town and set up timers without requiring fuel or solar power."

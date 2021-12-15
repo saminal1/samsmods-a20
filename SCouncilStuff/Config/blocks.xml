@@ -1,0 +1,137 @@
+<!--
+Sam's Council Stuff
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+	<insertAfter xpath="blocks/block[@name='streetLightClassic']">
+		<block name="streetLight01_Council">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="streetLight01"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="DescriptionKey" value="lightCouncilGroupDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="Light" value="2"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Model" value="Entities/Lighting/lightStreetLamp01Prefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="MaxDamage" value="10000"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="-1"/>
+			<property name="Group" value="Science"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+		<block name="streetLightClassic_Council">
+			<property name="Extends" value="porchLight01" param1="HandleFace"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="DescriptionKey" value="lightCouncilGroupDesc"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="Light" value="2"/>
+			<property name="Model" value="Entities/Lighting/streetLamp_ClassicPrefab"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+		</block>
+
+		<block name="recessedLight_Council">
+			<property name="Extends" value="porchLight01"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="DescriptionKey" value="lightCouncilGroupDesc"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="Light" value="2"/>
+			<property name="Model" value="Entities/Lighting/recessedLightPrefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+	</insertAfter>
+
+	<append xpath="/blocks">
+		<block name="wirelessWireRelay_Council">
+			<property name="Class" value="ElectricWire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CustomIcon" value="fusebox"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="DescriptionKey" value="wireRelay_CouncilDesc"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> 
+			<property name="Mesh" value="models"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="Group" value="Building"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="FilterTags" value="fdecor,fother,felectrical"/>
+			<property name="SortOrder1" value="70e0"/>
+			<property class="RepairItems">
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceScrapIron" count="4,8" prob="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+        </block>
+
+		<block name="electrictimerrelay_Council">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="TimerRelay"/>
+			<property name="CustomIcon" value="electrictimerrelay"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="DescriptionKey" value="wireRelay_CouncilDesc"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/relay_timerPrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="PoweredType" value="Constant"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="DisplayType" value="blockElectrical"/>
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+	</append>
+</configs>
