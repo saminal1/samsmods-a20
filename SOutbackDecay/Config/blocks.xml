@@ -1,6 +1,6 @@
 <!--
 Sam's Outback Decay
-v20.0.0
+v20.0.1
 by saminal
 
 blocks.xml
@@ -37,5 +37,22 @@ blocks.xml
             <property name="DisplayType" value="blockTerrainFertile"/>
         </block>
     </append>
+
+    <!-- SJ: Make glass fully transparent so it can be used over farms -->
+
+    <set xpath="/blocks/block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
+    <set xpath="/blocks/block[@name='glassBusinessBlock']/property[@name='LightOpacity']/@value">0</set>
+    <set xpath="/blocks/block[@name='glassBusinessSheet']/property[@name='LightOpacity']/@value">0</set>
+    <set xpath="/blocks/block[@name='opaqueBusinessGlass']/property[@name='LightOpacity']/@value">0</set>
+	
+    <!-- SJ: Make doors and drawbridge advanced-rotatable for trapdoors -->
+    
+    <set xpath="/blocks/block[@name='garageDoorMetal_v1']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorMetal_v2']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorMetal_v1Powered']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorHousePlayer']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorIndustrial']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[@name='garageDoorIndustrial_Powered']/property[@name='OnlySimpleRotations']/@value">false</set>
+    <set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='OnlySimpleRotations']/@value">false</set>
 
 </configs>
