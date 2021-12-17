@@ -7,32 +7,16 @@ blocks.xml
 -->
 
 <configs>
-	<append xpath="/blocks/block[@name='ironBarsCentered']">
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="steelBarsCentered"/>
-			<property name="Item" value="resourceForgedSteel"/>
-			<property name="ItemCount" value="10"/>
-			<property name="UpgradeHitCount" value="4"/>
-		</property>
-	</append>
+
+	<!-- SJ: Change Iron Bars to upgrade to custom steel bars, not vanilla concrete ones -->
+	<set xpath="/blocks/block[@name='ironBarsCentered']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">steelBarsCentered</set>
+	<set xpath="/blocks/block[@name='ironBarsCentered']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceForgedSteel</set>
 	
-	<append xpath="/blocks/block[@name='ironBars']">
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="steelBars"/>
-			<property name="Item" value="resourceForgedSteel"/>
-			<property name="ItemCount" value="10"/>
-			<property name="UpgradeHitCount" value="4"/>
-		</property>
-	</append>
-	
-	<append xpath="/blocks/block[@name='ironBarsCNR']">
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="steelBarsCNR"/>
-			<property name="Item" value="resourceForgedSteel"/>
-			<property name="ItemCount" value="10"/>
-			<property name="UpgradeHitCount" value="4"/>
-		</property>
-	</append>
+	<set xpath="/blocks/block[@name='ironBars']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">steelBars</set>
+	<set xpath="/blocks/block[@name='ironBars']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceForgedSteel</set>
+
+	<set xpath="/blocks/block[@name='ironBarsCNR']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">steelBarsCNR</set>
+	<set xpath="/blocks/block[@name='ironBarsCNR']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceForgedSteel</set>
 
 	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
 		<property class="UpgradeBlock">

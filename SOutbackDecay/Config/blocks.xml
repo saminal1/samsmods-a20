@@ -11,6 +11,7 @@ blocks.xml
     <append xpath="/blocks">
         <block name="terrDirtFertile">
             <property name="CustomIcon" value="terrForestGround"/>
+            <property name="CustomIconTint" value="C4A484"/>
             <property name="DescriptionKey" value="terrDirtFertileDesc"/>
             <property name="Material" value="Mfarmland"/>
             <property name="Shape" value="Terrain"/>
