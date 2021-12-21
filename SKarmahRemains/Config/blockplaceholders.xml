@@ -1,0 +1,25 @@
+<!--
+Sam's Karmah Remains
+v20.0.0
+by saminal
+
+entityclasses.xml
+-->
+
+<configs>
+
+	<append xpath="/blockplaceholders">
+		<placeholder name="goreBlockRandomHelperM">
+            <block name="goreBlockHumanCorpse1" prob=".5"/>
+            <block name="goreBlockHumanCorpse3" prob=".5"/>
+			<block name="goreHumanSkull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="goreBlockRandomHelperF">
+			<block name="goreBlockHumanCorpse" prob=".5"/>
+            <block name="goreBlockHumanCorpse2" prob=".5"/>
+			<block name="goreBlockHumanBones" prob=".5"/>
+		</placeholder>
+	</append>
+
+</configs>

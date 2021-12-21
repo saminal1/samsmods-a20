@@ -1,0 +1,107 @@
+<!--
+Sam's Karmah Remains
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+
+	<append xpath="/blocks">
+		<block name="goreBlockRandomHelperM">
+			<property name="CustomIcon" value="goreBlockHumanBones"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Material" value="Morganic"/>
+			<property name="MaxDamage" value="80"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Gore/humanSkeletonGorePrefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FallDamage" value=".9"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1,2" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+			<drop event="Destroy" name="resourceBone" count="5,9" tag="butcherHarvest"/>
+			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+
+		<block name="goreBlockSpawnerM">
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse"/>
+			<property name="CustomIconTint" value="ff80ff"/>
+			<property name="PlantGrowing.Next" value="goreBlockRandomHelperM"/>
+            <property name="PlantGrowing.GrowthRate" value="0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="Material" value="Morganic"/>
+			<property name="MaxDamage" value="80"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/halfCorpsePrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FallDamage" value=".9"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1,2" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+			<drop event="Destroy" name="resourceBone" count="5,9" tag="butcherHarvest"/>
+			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+
+		<block name="goreBlockRandomHelperF">
+			<property name="CustomIcon" value="goreBlockHumanBones"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Material" value="Morganic"/>
+			<property name="MaxDamage" value="80"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Gore/humanSkeletonGorePrefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FallDamage" value=".9"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1,2" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+			<drop event="Destroy" name="resourceBone" count="5,9" tag="butcherHarvest"/>
+			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+
+		<block name="goreBlockSpawnerF">
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse"/>
+			<property name="CustomIconTint" value="ff80ff"/>
+			<property name="PlantGrowing.Next" value="goreBlockRandomHelperF"/>
+            <property name="PlantGrowing.GrowthRate" value="0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="Material" value="Morganic"/>
+			<property name="MaxDamage" value="80"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/halfCorpsePrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FallDamage" value=".9"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="allHarvest" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1,2" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="4,8" tag="butcherHarvest"/>
+			<drop event="Destroy" name="resourceBone" count="5,9" tag="butcherHarvest"/>
+			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+	</append>
+
+</configs>
