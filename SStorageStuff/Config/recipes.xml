@@ -8,12 +8,17 @@ recipes.xml
 
 <configs>
     <append xpath="/recipes">
-        <recipe name="cntCabinetBottomPlayer" count="1">
+        <recipe name="cntCabinetPlayerBlockVariantHelper" count="1">
             <ingredient name="resourceNail" count="15"/>
             <ingredient name="resourceWood" count="24"/>
         </recipe>
 
         <recipe name="cntBookcasePlayer" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="24"/>
+        </recipe>
+
+        <recipe name="cntNightstandPlayer" count="1">
             <ingredient name="resourceNail" count="15"/>
             <ingredient name="resourceWood" count="24"/>
         </recipe>
@@ -29,9 +34,53 @@ recipes.xml
             <ingredient name="resourceWood" count="24"/>
         </recipe>
 
+        <recipe name="cntGunRackSmallMagazinesPlayer" count="1">
+            <ingredient name="resourceNail" count="10"/>
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceScrapIron" count="25"/>
+        </recipe>
+
+        <recipe name="cntGunRackSmallArmorPlayer" count="1">
+            <ingredient name="resourceNail" count="10"/>
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceScrapIron" count="25"/>
+        </recipe>
+
+        <recipe name="cntGunRackLargeGuns01Player" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="20"/>
+            <ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+
+        <recipe name="cntGunRackLargeGuns02Player" count="1">
+            <ingredient name="resourceNail" count="15"/>
+            <ingredient name="resourceWood" count="20"/>
+            <ingredient name="resourceScrapIron" count="50"/>
+        </recipe>
+
         <recipe name="cntWoodDeskPlayer" count="1">
             <ingredient name="resourceNail" count="20"/>
             <ingredient name="resourceWood" count="30"/>
+        </recipe>
+
+        <recipe name="cntMetalDesk02Player" count="1" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
+        </recipe>
+
+        <recipe name="cntLockersShortPlayer" count="1" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="10"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
+        </recipe>
+
+        <recipe name="cntLockersTallPlayer" count="1" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="15"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
+        </recipe>
+
+        <recipe name="cntLockersTallDoublePlayer" count="1" craft_time="40" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceForgedIron" count="15"/>
+            <ingredient name="resourceMechanicalParts" count="5"/>
         </recipe>
 
         <recipe name="cntRetroFridgePlayer" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">

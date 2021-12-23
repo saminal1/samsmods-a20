@@ -9,22 +9,24 @@ blocks.xml
 <configs>
     <append xpath="/blocks">
 
+        <!-- SJ: All the cabinets plus a variant block for them (one recipe, eight cupboards)-->
+
         <block name="cntCabinetBottomPlayer">
-            <property name="Class" value="SecureLoot"/> <!-- Upgraded to lockable -->
+            <property name="Class" value="SecureLoot"/> 
             <property name="CreativeMode" value="Player"/>
-            <property name="Material" value="MwoodReinforced"/> <!-- strength -->
-            <property name="CustomIcon" value="cntCabinetBottomFiller"/> <!-- Because icon doesn't exist for new blockname -->
+            <property name="Material" value="MwoodReinforced"/> 
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/> 
             <property name="ItemTypeIcon" value="lock"/>
-            <property name="DescriptionKey" value="playerStorageGroupDesc"/> <!-- localisation generic -->
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/> 
             <property name="Shape" value="New"/>
             <property name="Model" value="counter"/> 
             <property name="Texture" value="261,345,262,345,345,345"/>
             <property name="UseGlobalUV" value="Local"/>
-            <property name="LootList" value="playerCupboard"/> <!-- Sounds like a cupboard -->
+            <property name="LootList" value="playerCupboard"/> 
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
             <property name="DowngradeBlock" value="cntCabinetBottomPlayerInsecure"/>
-            <drop event="Destroy" count="0"/> <!-- because it will change to insecure -->
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <drop event="Destroy" count="0"/> 
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
             <property name="Path" value="solid"/>
             <property name="Place" value="TowardsPlacerInverted"/>
             <property name="IsDecoration" value="true"/>
@@ -33,19 +35,19 @@ blocks.xml
         </block>
 
         <block name="cntCabinetBottomPlayerInsecure">
-            <property name="Class" value="Loot"/> <!-- Upgraded to lockable -->
-            <property name="CreativeMode" value="Player"/>
-            <property name="Material" value="MwoodReinforced"/> <!-- strength -->
-            <property name="CustomIcon" value="cntCabinetBottomFiller"/> <!-- Because icon doesn't exist for new blockname -->
-            <property name="DescriptionKey" value="playerStorageGroupDesc"/> <!-- localisation generic -->
+            <property name="Class" value="Loot"/> 
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Material" value="MwoodReinforced"/> 
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/> 
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/> 
             <property name="Shape" value="New"/>
             <property name="Model" value="counter"/> 
             <property name="Texture" value="261,345,262,345,345,345"/>
             <property name="UseGlobalUV" value="Local"/>
-            <property name="LootList" value="playerCupboard"/> <!-- Sounds like a cupboard -->
+            <property name="LootList" value="playerCupboard"/> 
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
-            <drop event="Destroy" count="0"/> <!-- No Resources -->
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <drop event="Destroy" count="0"/> 
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
             <property name="Path" value="solid"/>
             <property name="Place" value="TowardsPlacerInverted"/>
             <property name="IsDecoration" value="true"/>
@@ -53,33 +55,428 @@ blocks.xml
             <property name="EconomicBundleSize" value="20"/>
         </block>
 
-        <!-- cntStorageGeneric
-        cntStorageGenericSigned
-        cntCabinetBottomFiller
-        cntCabinetBottom
-        cntCabinetBottomOpen
-        cntCupboardCabinetRedTopOpen
-        cntCupboardCabinetRedTopClosed
-        cntCupboardCornerCNRRed
-        cntCupboardCabinetFullRedTopClosed
-        cntCabinetBottomBrokenDoor
-        cntCabinetOldBottomOpen
-        cntCabinetOldBottom
-        cntCabinetOldCNRRoundFiller
-        cntCupboardCabinetOldTopOpen
-        cntCupboardCabinetOldTopClosed
-        cntCupboardCornerCNROld
-        cntCupboardCabinetFullOldTopClosed
-        cntBookcaseEmpty
-        cntBookcaseFull
-        cntPillCase
-        cntNightstandOpen
-        cntNightstandClosed
-        cntWoodDesk01Open
-        cntWoodDesk01Closed
-        woodChair1
-        oldChair1decoPicnicTable,coffeeTable,endTable,tableDynamic,woodTable,
-        -->
+        <block name="cntCupboardCabinetRedTopPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCabinetRedTopLootHelper"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cupboard"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+            <property name="DowngradeBlock" value="cntCupboardCabinetRedTopPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCabinetRedTopPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetRedTopLootHelper"/> 
+            <property name="Model" value="cupboard"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+        </block>
+
+        <block name="cntCupboardCornerCNRRedPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCornerCNRRed"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cupboard_corner"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+            <property name="DowngradeBlock" value="cntCupboardCornerCNRRedPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCornerCNRRedPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCornerCNRRed"/> 
+            <property name="Model" value="cupboard_corner"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+        </block>
+
+        <block name="cntCupboardCabinetFullRedTopPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCabinetFullRedTopClosed"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cube"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+            <property name="DowngradeBlock" value="cntCupboardCabinetFullRedTopPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCabinetFullRedTopPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetFullRedTopClosed"/> 
+            <property name="Model" value="cube"/> 
+            <property name="Texture" value="345,345,263,345,345,345"/>
+        </block>
+
+        <block name="cntCabinetOldBottomPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCabinetOldBottomLootHelper"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Texture" value="78,84,79,84,84,84"/>
+            <property name="DowngradeBlock" value="cntCabinetOldBottomPlayerInsecure"/>
+        </block>
+
+        <block name="cntCabinetOldBottomPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetOldBottomLootHelper"/> 
+            <property name="Texture" value="78,84,79,84,84,84"/>
+        </block>
+
+        <block name="cntCabinetOldSinkPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCabinetOldSink"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="counter_sink"/> 
+            <property name="Texture" value="374,78,79,84,84,84"/>
+            <property name="DowngradeBlock" value="cntCabinetOldSinkPlayerInsecure"/>
+        </block>
+
+        <block name="cntCabinetOldSinkPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetOldSink"/> 
+            <property name="Model" value="counter_sink"/> 
+            <property name="Texture" value="374,78,79,84,84,84"/>
+        </block>
+
+        <block name="cntCupboardCabinetOldTopPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cupboard"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+            <property name="DowngradeBlock" value="cntCupboardCabinetOldTopPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCabinetOldTopPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/> 
+            <property name="Model" value="cupboard"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+        </block>
+
+        <block name="cntCupboardCornerCNROldPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCornerCNROld"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cupboard_corner"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+            <property name="DowngradeBlock" value="cntCupboardCornerCNROldPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCornerCNROldPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCornerCNROld"/> 
+            <property name="Model" value="cupboard_corner"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+        </block>
+
+        <block name="cntCupboardCabinetFullOldTopPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCupboardCabinetFullOldTopClosed"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="cube"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+            <property name="DowngradeBlock" value="cntCupboardCabinetFullOldTopPlayerInsecure"/>
+        </block>
+
+        <block name="cntCupboardCabinetFullOldTopPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetFullOldTopClosed"/> 
+            <property name="Model" value="cube"/> 
+            <property name="Texture" value="84,84,81,84,84,84"/>
+        </block>
+
+        <block name="cntGraniteSinkPlayer">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntGraniteSink"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="counter_sink"/> 
+            <property name="Texture" value="373,261,262,345,345,345"/>
+            <property name="DowngradeBlock" value="cntGraniteSinkPlayerInsecure"/>
+        </block>
+
+        <block name="cntGraniteSinkPlayerInsecure">
+            <property name="Extends" value="cntCabinetBottomPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntGraniteSink"/> 
+            <property name="Model" value="counter_sink"/> 
+            <property name="Texture" value="373,261,262,345,345,345"/>
+        </block>
+
+        <block name="cntCabinetPlayerBlockVariantHelper">
+            <property name="Extends" value="cntCabinetBottomPlayer"/>
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property name="ItemTypeIcon" value="all_blocks"/>
+            <property name="SelectAlternates" value="true"/>
+            <property name="PlaceAltBlockValue" value="cntCabinetBottomPlayer,cntCupboardCabinetRedTopPlayer,cntCupboardCornerCNRRedPlayer,cntCupboardCabinetFullRedTopPlayer,cntCabinetOldBottomPlayer,cntCabinetOldSinkPlayer,cntCupboardCabinetOldTopPlayer,cntCupboardCornerCNROldPlayer,cntCupboardCabinetFullOldTopPlayer,cntGraniteSinkPlayer"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+        </block>
+
+        <block name="cntNightstandPlayer">
+            <property name="Class" value="SecureLoot"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="CustomIcon" value="cntNightstandClosed"/>
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?nightStand_closedPrefab.prefab"/> <property name="Place" value="TowardsPlacer90"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <property name="DowngradeBlock" value="cntNightstandPlayerInsecure"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+        </block>
+
+        <block name="cntNightstandPlayerInsecure">
+            <property name="Class" value="Loot"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="CustomIcon" value="cntNightstandOpen"/>
+            <property name="DescriptionKey" value="playerStorageGroupDesc"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?nightStand_emptyPrefab.prefab"/> <property name="Place" value="TowardsPlacer90"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="LootList" value="playerBookcase"/>
+            <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+            <property name="SortOrder2" value="0060"/> <!-- SortShape -->
+        </block>
+
+        <block name="cntMetalDesk02Player">
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntMetalDesk02RandomLootHelper"/>
+            <property name="ItemTypeIcon" value="lock"/>
+	        <property name="Class" value="SecureLoot"/>
+            <property name="LootList" value="playerMetalDesk"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Texture" value="293"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Furniture/cntMetalDesk02ClosedPrefab"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="MultiBlockDim" value="2,1,1"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="161"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="3"/>
+            </property>
+            <property name="DowngradeBlock" value="cntMetalDesk02PlayerInsecure"/>
+            <property name="EconomicValue" value="570"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntMetalDesk02PlayerInsecure">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntMetalDesk02Open"/>
+	        <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerMetalDesk"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Texture" value="293"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Furniture/cntMetalDesk02Open"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="MultiBlockDim" value="2,1,1"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="161"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="3"/>
+            </property>
+            <property name="EconomicValue" value="570"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntLockersShortPlayer">
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntLockersShortClosed"/>
+            <property name="ItemTypeIcon" value="lock"/>
+	        <property name="Class" value="SecureLoot"/>
+            <property name="LootList" value="playerLockers"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?locker_ver3_lootPrefab.prefab"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="2"/>
+            </property>
+            <property name="DowngradeBlock" value="cntLockersShortPlayerInsecure"/>
+            <property name="EconomicValue" value="200"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntLockersShortPlayerInsecure">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntLockersShortOpen"/>
+	        <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerLockers"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?locker_ver3_emptyPrefab.prefab"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+           <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="2"/>
+            </property>
+            <property name="EconomicValue" value="200"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntLockersTallPlayer">
+            <property name="Extends" value="cntLockersShortPlayer"/>
+            <property name="CustomIcon" value="cntLockersTallClosed"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DisplayType" value="blockMulti"/>
+	        <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="Model" value="#Entities/LootContainers?locker_ver1_lootPrefab.prefab"/>
+            <property name="DowngradeBlock" value="cntLockersTallPlayerInsecure"/>
+        </block>
+
+        <block name="cntLockersTallPlayerInsecure">
+            <property name="Extends" value="cntLockersShortPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DisplayType" value="blockMulti"/>
+	        <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="CustomIcon" value="cntLockersTallOpen"/> 
+            <property name="Model" value="#Entities/LootContainers?locker_ver1_emptyPrefab.prefab"/>
+        </block>
+
+        <block name="cntLockersTallDoublePlayer">
+            <property name="Extends" value="cntLockersShortPlayer"/>
+            <property name="CustomIcon" value="cntLockersTallDoubleClosed"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="DisplayType" value="blockMulti"/>
+	        <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="Model" value="#Entities/LootContainers?locker_ver2_lootPrefab.prefab"/> 
+            <property name="DowngradeBlock" value="cntLockersTallDoublePlayerInsecure"/>
+        </block>
+
+        <block name="cntLockersTallDoublePlayerInsecure">
+            <property name="Extends" value="cntLockersShortPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DisplayType" value="blockMulti"/>
+	        <property name="MultiBlockDim" value="1,2,1"/>
+            <property name="CustomIcon" value="cntLockersTallDoubleOpen"/> 
+            <property name="Model" value="#Entities/LootContainers?locker_ver2_emptyPrefab.prefab"/>
+        </block>
+
+        <block name="cntGunRackSmallArmorPlayer">
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="cntGunRackSmallArmor"/>
+            <property name="ItemTypeIcon" value="lock"/>
+	        <property name="Class" value="SecureLoot"/>
+            <property name="LootList" value="playerAmmoDisplay"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Commercial/gunrackWallVestPrefab"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="2"/>
+            </property>
+            <property name="DowngradeBlock" value="cntGunRackSmallArmorPlayerInsecure"/>
+            <property name="EconomicValue" value="200"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntGunRackSmallArmorPlayerInsecure">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntGunRackSmallArmor"/>
+	        <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerAmmoDisplay"/>     
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Commercial/gunrackWallVestPrefab"/>
+            <property name="Path" value="solid"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+           <property name="DisplayInfo" value="Name"/>
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="2"/>
+            </property>
+            <property name="EconomicValue" value="200"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+        </block>
+
+        <block name="cntGunRackSmallMagazinesPlayer">
+            <property name="Extends" value="cntGunRackSmallArmorPlayer"/>
+            <property name="CustomIcon" value="cntGunRackSmallMagazines"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="Model" value="Entities/Commercial/gunrackWallMagPrefab"/>
+            <property name="DowngradeBlock" value="cntGunRackSmallMagazinesPlayerInsecure"/>
+        </block>
+
+        <block name="cntGunRackSmallMagazinesPlayerInsecure">
+            <property name="Extends" value="cntGunRackSmallArmorPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntGunRackSmallMagazines"/> 
+            <property name="Model" value="Entities/Commercial/gunrackWallMagPrefab"/>
+        </block>
+
+        <block name="cntGunRackLargeGuns01Player">
+            <property name="Extends" value="cntGunRackSmallArmorPlayer"/>
+            <property name="CustomIcon" value="cntGunRackLargeGuns01"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+	        <property name="DisplayType" value="blockMulti"/>
+            <property name="Model" value="Entities/Commercial/gunrackWallGunsAPrefab"/>
+            <property name="DowngradeBlock" value="cntGunRackLargeGuns01PlayerInsecure"/>
+        </block>
+
+        <block name="cntGunRackLargeGuns01PlayerInsecure">
+            <property name="Extends" value="cntGunRackSmallArmorPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+	        <property name="DisplayType" value="blockMulti"/>
+            <property name="CustomIcon" value="cntGunRackLargeGuns01"/> 
+            <property name="Model" value="Entities/Commercial/gunrackWallGunsAPrefab"/>
+        </block>
+
+        <block name="cntGunRackLargeGuns02Player">
+            <property name="Extends" value="cntGunRackSmallArmorPlayer"/>
+            <property name="CustomIcon" value="cntGunRackLargeGuns02"/> 
+            <property name="ItemTypeIcon" value="lock"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+	        <property name="DisplayType" value="blockMulti"/>
+            <property name="Model" value="Entities/Commercial/gunrackWallGunsBPrefab"/>
+            <property name="DowngradeBlock" value="cntGunRackLargeGuns02PlayerInsecure"/>
+        </block>
+
+        <block name="cntGunRackLargeGuns02PlayerInsecure">
+            <property name="Extends" value="cntGunRackSmallArmorPlayerInsecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="MultiBlockDim" value="1,2,1"/>
+	        <property name="DisplayType" value="blockMulti"/>
+            <property name="CustomIcon" value="cntGunRackLargeGuns02"/> 
+            <property name="Model" value="Entities/Commercial/gunrackWallGunsBPrefab"/>
+        </block>
 
         <block name="cntBookcasePlayer">
             <property name="Class" value="SecureLoot"/>
@@ -96,13 +493,13 @@ blocks.xml
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
             <property name="DowngradeBlock" value="cntBookcasePlayerInsecure"/>
             <drop event="Destroy" count="0"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
             <property name="SortOrder2" value="0060"/> <!-- SortShape -->
         </block>
 
         <block name="cntBookcasePlayerInsecure">
             <property name="Class" value="Loot"/>
-            <property name="CreativeMode" value="None"/>
+            <property name="CreativeMode" value="Dev"/>
             <property name="Material" value="MwoodReinforced"/>
             <property name="CustomIcon" value="cntBookcaseFull"/>
             <property name="DescriptionKey" value="playerStorageGroupDesc"/>
@@ -113,7 +510,7 @@ blocks.xml
             <property name="LootList" value="playerBookcase"/>
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
             <drop event="Destroy" count="0"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
             <property name="SortOrder2" value="0060"/> <!-- SortShape -->
         </block>
 
@@ -147,11 +544,11 @@ blocks.xml
             <drop event="Destroy" name="resourceScrapIron" count="2,10"/>
             <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
             <property name="EconomicValue" value="192"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
         </block>
 
         <block name="cntRetroFridgePlayerInsecure">
-            <property name="CreativeMode" value="Player"/>
+            <property name="CreativeMode" value="Dev"/>
             <property name="Material" value="Mmetal"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="playerFridge"/>
@@ -179,7 +576,7 @@ blocks.xml
             <drop event="Destroy" name="resourceScrapIron" count="2,10"/>
             <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
             <property name="EconomicValue" value="192"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
         </block>
 
         <block name="cntFridgeStainlessSteelPlayer">
@@ -194,7 +591,7 @@ blocks.xml
         <block name="cntFridgeStainlessSteelPlayerInsecure">
             <property name="Extends" value="cntRetroFridgePlayerInsecure"/>
             <property name="Model" value="Entities/Appliances/fridgeStainlessSteelOpenPrefab" param1="main_mesh"/>
-            <property name="CreativeMode" value="Player"/>
+            <property name="CreativeMode" value="Dev"/>
             <property name="CustomIcon" value="cntFridgeStainlessSteelVer2Open"/>
         </block>
 
@@ -211,7 +608,7 @@ blocks.xml
             <property name="LootList" value="playerCupboard"/>
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
             <drop event="Destroy" name="resourceWood" count="1,3"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
             <property name="DescriptionKey" value="playerStorageGroupDesc"/>
         </block>
 
@@ -219,6 +616,7 @@ blocks.xml
             <property name="Class" value="Loot"/>
             <property name="Material" value="Mwood_weak"/>
             <property name="Shape" value="ModelEntity"/>
+            <property name="CreativeMode" value="Dev"/>
             <property name="Model" value="#Entities/LootContainers?pill_case_closedPrefab.prefab"/>
             <property name="CustomIcon" value="cntPillCaseClosed"/>
             <property name="SortOrder2" value="0060"/> <!-- SortShape -->
@@ -226,7 +624,7 @@ blocks.xml
             <property name="LootList" value="playerCupboard"/>
             <property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
             <drop event="Destroy" name="resourceWood" count="1,3"/>
-            <property name="FilterTags" value="floot,ffurniture"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
             <property name="DescriptionKey" value="playerStorageGroupDesc"/>
         </block>
 
@@ -243,7 +641,7 @@ blocks.xml
         
         <block name="cntWoodDeskPlayerInsecure">
             <property name="Extends" value="cntWoodDesk01Open"/>
-            <property name="CreativeMode" value="Player"/>
+            <property name="CreativeMode" value="Dev"/>
             <property name="Model" value="Furniture/desk01_ver2" param1="main_mesh"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="playerBookcase"/>
@@ -278,7 +676,3 @@ blocks.xml
         </block> -->
     </append>
 </configs>
-
-<!-- cntWineBarrel
-cntWineBarrelSet
-cntWineBarrelPlain -->

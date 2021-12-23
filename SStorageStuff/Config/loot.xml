@@ -26,6 +26,17 @@ loot.xml
             <item name="cobweb" count="1,2"/>
         </lootcontainer>
 
+        <lootcontainer id="213" name="playerMetalDesk" count="1" size="8,9" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="1,2"/>
+        </lootcontainer>
+
+        <lootcontainer id="214" name="playerLockers" count="1" size="8,9" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" loot_quality_template="qualBaseTemplate">
+	        <item name="cobweb" count="1,2"/>
+        </lootcontainer>
+        
+        <lootcontainer id="215" name="playerAmmoDisplay" count="1" size="8,9" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+	        <item name="cobweb" count="1,2"/>
+        </lootcontainer>   
         <!-- Vent -->
         <!-- <lootcontainer id="213" name="playerVent" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
         </lootcontainer> -->
