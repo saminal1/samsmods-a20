@@ -1,0 +1,31 @@
+<!--
+Sam's OD Builder Test Kit
+v20.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>    
+	
+	<insertAfter xpath="items/item[@name='questRewardGyrocopterPartsBundle']">
+
+        <item name="outbackDecayBuilderTestKit">
+            <property name="Extends" value="noteTestersDelightAdmin"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="bundleFarm"/>
+            <property name="CustomIconTint" value="FFDDDD"/>
+            <property name="ItemTypeIcon" value="bundle"/>
+            <property name="DescriptionKey" value="outbackDecayBuilderTestKitDesc"/>
+            <property class="Action0">
+                <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletBall,questRewardT1LightArmorBonusBundle,vehicleMotorcyclePlaceable,ammoGasCanBundle,questRewardMiningHelmetBundle"/>
+                <property name="Create_item_count" value="5,300,1,1,1,1"/>
+                <property name="Random_item" value="questRewardT1RangedModsBundle"/>
+                <property name="Random_item_count" value="1"/>
+                <property name="Random_count" value="1"/>
+                <property name="Unique_random_only" value="true"/>
+            </property>
+        </item>
+    </insertAfter>
+
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Sam's Outback Decay Builder Test Kit" />
+		<Description value="A starter kit for testers on the builder server" />
+		<Author value="Saminal" />
+		<Version value="20.0.0" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+	</ModInfo>
+</xml>

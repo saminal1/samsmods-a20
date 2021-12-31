@@ -1,0 +1,13 @@
+<!--
+Sam's OD Builder Test Kit
+v20.0.0
+by saminal
+
+entityclasses.xml
+-->
+
+<configs>    
+	
+    <!-- <append xpath="entity_classes/entity_class[@name='playerMale']/property[starts-with(@name, 'ItemsOnEnterGame')]/@value">,outbackDecayBuilderTestKit</append> -->
+
+</configs>

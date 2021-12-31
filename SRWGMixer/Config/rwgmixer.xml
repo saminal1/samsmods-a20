@@ -20,13 +20,23 @@ rwgmixer.xml
 	<set xpath="rwgmixer/world[@name='medium']/property[@class='city']/property[@name='many']/@value">7</set>
 	
 	<!-- Increase size of cities -->
-	<set xpath="rwgmixer/world[@name='medium']/property[@class='city']/property[@name='mintiles']/@value">18</set>
-	<set xpath="rwgmixer/world[@name='medium']/property[@class='city']/property[@name='maxtiles']/@value">23</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='city']/property[@name='mintiles']/@value">16</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='city']/property[@name='maxtiles']/@value">22</set>
 	
 	<!-- Increase Wilderness POIs -->
 	<set xpath="rwgmixer/world[@name='medium']/property[@class='wilderness']/property[@name='few']/@value">450</set>
 	<set xpath="rwgmixer/world[@name='medium']/property[@class='wilderness']/property[@name='default']/@value">500</set>
 	<set xpath="rwgmixer/world[@name='medium']/property[@class='wilderness']/property[@name='many']/@value">600</set>
 	
+	<!-- Increase Rivers and Lakes -->
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='lakes']/property[@name='scale']/@value">1.5,2</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='lakes']/property[@name='few']/@value">6</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='lakes']/property[@name='default']/@value">10</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='lakes']/property[@name='many']/@value">16</set>
+	
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='rivers']/property[@name='few']/@value">1.75,2.3</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='rivers']/property[@name='default']/@value">8</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='rivers']/property[@name='many']/@value">14</set>
+	<set xpath="rwgmixer/world[@name='medium']/property[@class='rivers']/property[@name='many']/@value">14</set>
 
 </configs>
