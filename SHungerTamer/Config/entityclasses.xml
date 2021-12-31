@@ -1,0 +1,24 @@
+<!--
+Sam's Hunger Tamer
+v20.0.0
+by saminal
+
+entityclasses.xml
+-->
+
+<configs>
+
+    <!-- SJ: Half base water / food loss rate -->
+    <!-- Original values: WaterChangeOT = 0.0111, FoodChangeOT = 0.00833-->
+
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterChangeOT'][1]/@value">0.00555</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='FoodChangeOT'][1]/@value">0.00416</set>
+
+    <!-- SJ: Half water / food loss for stamina / health recovery -->
+    <!-- Original values: Water per HP gained = 0.06, Water per Stamina gained = 0.00453, Food per Stamina gained = 0.00408 -->
+
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterLossPerHealthPointGained']/@value">0.03</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.00226</set>
+    <set xpath="entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0.00204</set>
+    
+</configs>
