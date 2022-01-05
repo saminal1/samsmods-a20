@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Sam's Extra Zeds - Russell Coight" />
+        <Description value="Tweaked zombie and animal spawning, based on Khaine's Dangerous Cities" />
+        <Author value="saminal"/>
+        <Version value="20.0.0"/>
+        <Website value="https://discord.gg/mBJwEw4kj8" />
+    </ModInfo>
+</xml>
