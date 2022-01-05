@@ -81,7 +81,70 @@ items.xml
             </effect_group>
         </item>
     </insertAfter>
+
     <append xpath="items/item[@name='solarCell']">
         <property name="UnlockedBy" value="perkAdvancedEngineering,solarbankSchematic"/>
     </append>
+
+    <insertAfter xpath="items/item[@name='meleeToolHammerOfGodAdmin']">
+        <item name="meleeToolSilverHammer">
+            <property name="Extends" value="meleeToolPickT1IronPickaxe"/>
+            <property name="Tags" value="tool,sideAttachments,repairTool,attStrength,perkMiner69r,canHaveCosmetic,noMods"/>
+            <property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+            <property name="CustomIconTint" value="EEEEEE"/>
+            <property name="DisplayType" value="melee"/>
+            <property name="DescriptionKey" value="meleeToolSilverHammerDesc"/>
+            <property name="HoldType" value="32"/>
+            <property name="Meshfile" value="#Other/Items?Tools/hammerPrefab.prefab"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="EconomicValue" value="700"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Weight" value="6"/>
+            <property name="SellableToTrader" value="false"/>
+            <property class="Action0">
+                <property name="GrazeStart" value=".12"/>
+                <property name="GrazeEnd" value=".3"/>
+                <property name="SwingDegrees" value="45"/>
+                <property name="SwingAngle" value="135"/>
+                <property name="UseGrazingHits" value="true"/>
+            </property>
+            <property class="Action1">
+                <property name="UsePowerAttackAnimation" value="true"/>
+                <property name="UseGrazingHits" value="true"/>
+                <property name="GrazeStart" value=".4"/>
+                <property name="GrazeEnd" value=".48"/>
+                <property name="SwingDegrees" value="110"/>
+                <property name="SwingAngle" value="90"/>
+            </property>
+            <property name="Group" value="Tools/Traps"/>
+            <effect_group name="meleeToolSilverHammer" tiered="false">
+                <passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkMiner69r"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkMiner69r,miningTool"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="1500" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="4" tags="perkMiner69r"/>
+                <passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+
+                <passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood,earth,metal"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value="500" tags="stone"/>
+
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="allHarvest"/>
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="allToolsHarvest"/>
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="oreWoodHarvest"/>
+            </effect_group>
+
+            <effect_group name="Power Attack" tiered="false">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="52.7" tags="secondary"/>
+            </effect_group>
+        </item>
+    </insertAfter>
 </configs>

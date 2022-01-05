@@ -62,6 +62,15 @@ recipes.xml
             <ingredient name="resourceElectricParts" count="10"/>
             <ingredient name="resourceBrokenGlass" count="25"/>
         </recipe>
+
+        <recipe name="meleeToolSilverHammer" count="1" craft_area="workbench" tags="perkAdvancedEngineering,workbenchCrafting" craft_time="75">
+            <ingredient name="meleeToolRepairT1ClawHammer" count="1"/>
+            <ingredient name="resourceForgedSteel" count="20"/>
+            <ingredient name="resourceSilverNugget" count="10"/>
+            <ingredient name="resourceRawDiamond" count="5"/>
+        </recipe>
+
+        
     </append>
-    
+
 </configs>
