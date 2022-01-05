@@ -29,4 +29,11 @@ loot.xml
     <remove xpath="lootcontainers/lootgroup[@name='groupApparelHats']/item[@name='armorSantaHat']"/>
     <remove xpath="lootcontainers/lootgroup[@name='groupWeaponsT1_Melee']/item[@name='meleeWpnClubT1CandyClub']"/>
     <remove xpath="lootcontainers/lootgroup[@name='groupWeaponsT1_Melee']/item[@name='meleeWpnBladeT1CandyKnife']"/>
+
+    <set xpath="lootcontainers/lootgroup[@name='groupCraftingUncommon']/item[@name='resourceAcid']/@loot_prob_template">medLow</set>
+    <set xpath="lootcontainers/lootgroup[@name='groupChem01']/item[@name='resourceAcid']/@loot_prob_template">medLow</set>
+    <set xpath="lootcontainers/lootgroup[@name='groupSinks03']/item[@name='resourceAcid']/@loot_prob_template">low</set>
+    <set xpath="lootcontainers/lootgroup[@name='groupGarage02']/item[@name='resourceAcid']/@loot_prob_template">low</set>
+    <set xpath="lootcontainers/lootgroup[@name='groupUtilityCart']/item[@name='resourceAcid']/@loot_prob_template">low</set>
+    
 </configs>
