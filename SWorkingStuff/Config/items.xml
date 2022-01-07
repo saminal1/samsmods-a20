@@ -109,7 +109,7 @@ items.xml
             <property name="Extends" value="schematicNoQualityRecipeMaster"/>
             <property name="CreativeMode" value="Player"/>
             <property name="CustomIcon" value="cntWallOven"/>
-            <property name="Unlocks" value="cntWallOven"/>
+            <property name="Unlocks" value="cntWallOvenWorking"/>
             <effect_group tiered="false">
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntWallOvenWorking" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cntCharcoalGrillWorking" operation="set" value="1"/>
