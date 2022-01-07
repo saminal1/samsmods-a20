@@ -74,6 +74,12 @@ recipes.xml
 			<ingredient name="resourceScrapBrass" count="20"/>
 		</recipe>
 
+		<recipe name="manholeHatch" count="1">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>
+
 		<recipe name="window02" count="1">
 			<ingredient name="resourceWood" count="4"/>
 			<ingredient name="glassBlockVariantHelper" count="1"/>
