@@ -1,0 +1,138 @@
+<!--
+Sam's ServerInfo ODBuilder TABS
+v20.0.0
+by saminal with thanks to BadPlayer
+
+windows.xml
+-->
+	
+	<configs>
+		
+		<append xpath="/windows">
+			
+			<!-- SJ: serverinfowindow is commented out in the vanilla xui.xml but activated in this modlet -->
+			<!-- SJ: to host your own PNGs use Alloc's Server Fixes and place the files in Mods/Allocs_WebAndMapRendering/webserver/img/ -->
+			<!-- SJ: you can then use your own server IP and webmap port followed by /static/img/filename.png as I have below -->
+
+			<window name="serverinfowindow" anchor="CenterTop" pos="-450,-260" width="902" height="800" cursor_area="true">
+			
+				<!-- SJ: Displays the Outback Decay logo (900x125) in the top-middle of the screen -->
+
+				<panel name="header" pos="0,46" height="46" depth="1" disableautobackground="true" >
+					<!-- <sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" /> -->
+					<texture depth="6" pos="451,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26904/static/img/ingamelogobig.png"/>
+					<!-- <label style="header.name" pos="6,-6" text="Server Information" /> -->
+				</panel>
+			
+				<rect name="tabs" controller="TabSelector" pos="0,10" height="690">
+					<sprite depth="10" name="border" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+
+					<rect name="tabsHeader" height="39" depth="0">
+						<sprite depth="0" name="backgroundMainTabs" sprite="menu_empty3px" color="0,0,0,150" type="sliced" fillcenter="true" globalopacity="true" />
+						
+						<grid name="tabButtons" pos="2,-2" depth="2" rows="1" cols="5" cell_width="179" cell_height="36" repeat_content="true" arrangement="horizontal">
+							<rect>
+								<simplebutton name="tabButton" depth="2" pos="-1,0" width="180" height="36" font_size="34" caption_key="xuiBack" bordercolor="[transparent]" defaultcolor="[darkGrey]" selectedsprite="menu_empty" selectedcolor="[mediumGrey]" foregroundlayer="false" />
+								<sprite depth="8" sprite="menu_empty2px" pos="179,0" width="2" height="35" color="[black]" />
+							</rect>
+						</grid>
+					</rect>
+
+					<rect name="tabsContents" depth="2" pos="0,-37" height="651">
+						<sprite depth="0" pos="2,0" width="900" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="true" />
+					
+						<rect tab_key="Rules">
+							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
+							    <label color="[red]" font_size="28" depth="2" width="900" text="1. Don't be a dickhead" />
+							    <label color="[white]" font_size="23" depth="2" width="900" text=" - The golden rule. We're all here to have fun. No stealing, griefing, or messing with others." />	
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - Breaking rule 1 will result in a ban with very little discussion." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+						        <label color="[red]" font_size="28" depth="2" width="900" text="2. If it ain't yours, don't take it" />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - People forget to lock vehicles. Forges can't be locked. Don't take stuff just because you can." />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - Obviously loot in the world is fair game, but if it looks like it might belong to a player, assume it does." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="3. Be sociable" />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - More of a guideline than a rule. You don't have to chat to play here, but it's strongly encouraged." />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - We also recommend joining the discord, for updates and chat." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="4. Respect the town" />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - Please do not build in the town without talking to someone first." />
+								<label color="[white]" font_size="23" depth="2" width="900" text=" - It's important to the community that town development is in line with the big picture plan." />
+							</grid>
+						</rect>
+
+						<rect tab_key="Commands">
+							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
+							    <label color="[red]" font_size="28" depth="2" width="900" text="Teleport Commands" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/bed | Teleports you to your bedroll" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/setbuild | Marks a teleport location for your current project" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/build | Teleports you to your current project" />
+							    <label color="[red]" font_size="28" depth="2" width="900" text="Public Locations" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="There are two mining areas which can be reset. Please keep your mining activities to these:" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/minedesert - for oil shale, iron, lead, and nitrate" />	
+								<label color="[white]" font_size="23" depth="2" width="900" text="/mineforest - for coal, iron, lead and nitrate" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/town - to visit the player-built town" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Stuck Vehicles" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv bicycle" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv minibike" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv motorcycle" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv jeep" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv gyrocopter" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/gv drone" />
+							</grid>
+						</rect>
+
+						<rect tab_key="Mods">
+							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
+							    <label color="[red]" font_size="28" depth="2" width="900" text="Sam's Building Stuff" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Wood/Iron/Steel Bars, Steel Spike Traps, POI Doors &amp; Windows" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Sam's Deco Stuff" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Craftable deco blocks to add a touch of charm" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Sam's Storage Stuff" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Lockable furniture for your base" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Sam's Working Stuff" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Working versions of POI lights, plus Workings Ovens and BBQ Grills, and Working Faucets." />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Sam's Car and Truck Respawner" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Cars, Trucks, and Ambulances respawn after they have been harvested." />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Sam's Sustainable Forestry" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Trees respawn automatically. Rare chance for sapling drops which grow random trees." />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay &quot;Aussifications&quot; and customised POIs" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay Builder Quests and Boosts" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Custom Tutorial Quest line to provide useful schematics. 10x boosted harvest on ore and wood, and crafting." />
+								<label color="[red]" font_size="23" depth="2" width="900" text="Khaine's KillTracking, Lockable Slots, and 3 Slot Forge" />
+								<label color="[red]" font_size="23" depth="2" width="900" text="AGF HUDPlus" />
+								<label color="[red]" font_size="23" depth="2" width="900" text="Sam's Kharma Remains and Long Loot Bags" />
+							</grid>
+						</rect>
+
+						<rect tab_key="Map">
+							<texture depth="2" pos="450,-325" width="640" height="640" pivot="center" texture="@http://139.99.130.200:5202/static/img/ingamemap.png"/>
+						</rect>
+
+						<rect tab_key="Outback Decay">
+							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
+								<label color="[white]" font_size="28" depth="2" width="900" text="Check out the other Outback Decay servers:" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Glenn Robbins Edition" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Our original server. Resets with a new map bi-monthly." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Russell Coight Edition" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Our hard-mode server. Extra zombies, feral sense, no handouts." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[white]" font_size="28" depth="2" width="900" text="Join the discord for info - https://discord.gg/mBJwEw4kj8 or scan the QR code" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="If you need an admin, post your request in chat and include the word &quot;admin&quot;" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+							</grid>
+							<texture depth="6" pos="798,-132" width="200" height="257" pivot="center" texture="@http://139.99.130.200:5202/static/img/discord2022.png"/>
+						</rect>
+
+					</rect>
+
+				</rect>
+			
+			</window>
+ 		 
+ 		 </append>	
+
+	</configs>

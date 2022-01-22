@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	
+	<xml>
+		<ModInfo>
+			<Name value="Sam's Server Info - ODBuilder TABS" />
+			<Description value="Adds info screen to the esc menu." />
+			<Author value="saminal with help from BadPlayer" />
+			<Version value="20.0.0" />
+			<Website value="https://discord.gg/mBJwEw4kj8" />
+		</ModInfo>
+	</xml>
