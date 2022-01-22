@@ -20,7 +20,7 @@ windows.xml
 
 				<panel name="header" pos="0,46" height="46" depth="1" disableautobackground="true" >
 					<!-- <sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" /> -->
-					<texture depth="6" pos="451,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26904/static/img/ingamelogobig.png"/>
+					<texture depth="6" pos="451,66" width="900" height="125" pivot="center" texture="@http://139.99.130.200:5202/static/img/ingamelogobig.png"/>
 					<!-- <label style="header.name" pos="6,-6" text="Server Information" /> -->
 				</panel>
 			
@@ -40,6 +40,24 @@ windows.xml
 
 					<rect name="tabsContents" depth="2" pos="0,-37" height="651">
 						<sprite depth="0" pos="2,0" width="900" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="true" />
+						
+						<rect tab_key="Outback Decay">
+							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
+								<label color="[white]" font_size="28" depth="2" width="900" text="Check out the other Outback Decay servers:" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Glenn Robbins Edition" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Our original server. Resets with a new map bi-monthly." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Russell Coight Edition" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Our hard-mode server. Extra zombies, feral sense, no handouts." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[white]" font_size="28" depth="2" width="900" text="Join the discord for info - https://discord.gg/mBJwEw4kj8 or scan the QR code" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="If you need an admin, post your request in chat and include the word &quot;admin&quot;" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+							</grid>
+							<texture depth="6" pos="798,-132" width="200" height="257" pivot="center" texture="@http://139.99.130.200:5202/static/img/discord2022.png"/>
+						</rect>
 					
 						<rect tab_key="Rules">
 							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
@@ -107,24 +125,6 @@ windows.xml
 
 						<rect tab_key="Map">
 							<texture depth="2" pos="450,-325" width="640" height="640" pivot="center" texture="@http://139.99.130.200:5202/static/img/ingamemap.png"/>
-						</rect>
-
-						<rect tab_key="Outback Decay">
-							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
-								<label color="[white]" font_size="28" depth="2" width="900" text="Check out the other Outback Decay servers:" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Glenn Robbins Edition" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="Our original server. Resets with a new map bi-monthly." />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Russell Coight Edition" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="Our hard-mode server. Extra zombies, feral sense, no handouts." />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-								<label color="[white]" font_size="28" depth="2" width="900" text="Join the discord for info - https://discord.gg/mBJwEw4kj8 or scan the QR code" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="If you need an admin, post your request in chat and include the word &quot;admin&quot;" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-							</grid>
-							<texture depth="6" pos="798,-132" width="200" height="257" pivot="center" texture="@http://139.99.130.200:5202/static/img/discord2022.png"/>
 						</rect>
 
 					</rect>
