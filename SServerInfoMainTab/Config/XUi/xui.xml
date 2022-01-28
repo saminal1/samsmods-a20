@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	
+	<configs>
+
+		<append xpath="/xui/ruleset">
+			
+			<window_group name="serverinfowindow">
+				<window name="serverinfowindow" />
+			</window_group>
+
+		</append>
+	
+	</configs>
