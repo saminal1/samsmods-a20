@@ -17,3 +17,4 @@ decoEmberPileFireDesc,blocks,Deco,,,These flaming embers lend some warmth and co
 cntWoodBurningStoveFire,blocks,Deco,,,Wood Burning Stove
 cntWoodBurningStoveFireDesc,blocks,Deco,,,Bring the heat to your hearth with an old-fashioned wood burning stove.
 modularFireWoodStackCFire,blocks,Deco,,,Fireplace Wood
+decoTableSaw,blocks,Deco,,,Table Saw

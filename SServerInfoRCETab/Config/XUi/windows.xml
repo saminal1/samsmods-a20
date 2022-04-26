@@ -20,7 +20,7 @@ windows.xml
 
 				<panel name="header" pos="0,46" height="46" depth="1" disableautobackground="true" >
 					<!-- <sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" /> -->
-					<texture depth="6" pos="451,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26924/static/img/ingamelogobig.png"/>
+					<texture depth="6" pos="451,66" width="900" height="125" pivot="center" texture="@http://139.99.144.197:26904/static/img/ingamelogobig.png"/>
 					<!-- <label style="header.name" pos="6,-6" text="Server Information" /> -->
 				</panel>
 			
@@ -45,18 +45,18 @@ windows.xml
 							<grid pos="20,-25" rows="0" cell_width="900" cell_height="32" repeat_content="false" arrangement="vertical" >
 								<label color="[white]" font_size="28" depth="2" width="900" text="Check out the other Outback Decay servers:" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="" />
+								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Glenn Robbins Edition" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="Our original server. Resets with a new map every two months." />
+								<label color="[white]" font_size="23" depth="2" width="900" text="" />
 								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Builder Edition" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="Boosted mining rates, accelerated crafting, and custom quests for vital schematics." />
-								<label color="[white]" font_size="23" depth="2" width="900" text="" />
-								<label color="[red]" font_size="28" depth="2" width="900" text="Outback Decay - Russell Coight Edition" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="Our hard-mode server. Extra zombies, feral sense, no handouts." />
 								<label color="[white]" font_size="23" depth="2" width="900" text="" />
 								<label color="[white]" font_size="28" depth="2" width="900" text="Join the discord for info - https://discord.gg/mBJwEw4kj8 or scan the QR code" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="If you need an admin, post your request in chat and include the word &quot;admin&quot;" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="" />
 							</grid>
-							<texture depth="6" pos="798,-132" width="200" height="257" pivot="center" texture="@http://139.99.144.197:26924/static/img/discord2022.png"/>
+							<texture depth="6" pos="798,-132" width="200" height="257" pivot="center" texture="@http://139.99.144.197:26904/static/img/discord2022.png"/>
 						</rect>
 					
 						<rect tab_key="Rules">
@@ -84,8 +84,8 @@ windows.xml
 							    <!-- <label color="[red]" font_size="28" depth="2" width="900" text="Teleport Commands" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="/bed | Teleports you to your bedroll" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="/setbuild | Marks a teleport location for your current project" />
-								<label color="[white]" font_size="23" depth="2" width="900" text="/build | Teleports you to your current project" />
-							    <label color="[red]" font_size="28" depth="2" width="900" text="Public Locations" />
+								<label color="[white]" font_size="23" depth="2" width="900" text="/build | Teleports you to your current project" /> -->
+							    <!-- <label color="[red]" font_size="28" depth="2" width="900" text="Public Locations" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="There are two mining areas which can be reset. Please keep your mining activities to these:" />
 								<label color="[white]" font_size="23" depth="2" width="900" text="/minedesert - for oil shale, iron, lead, and nitrate" />	
 								<label color="[white]" font_size="23" depth="2" width="900" text="/mineforest - for coal, iron, lead and nitrate" />
@@ -123,9 +123,9 @@ windows.xml
 							</grid>
 						</rect>
 
-						<rect tab_key="Map">
-							<texture depth="2" pos="450,-325" width="640" height="640" pivot="center" texture="@http://103.77.232.194:26944/static/img/ingamemapGRE.png"/>
-						</rect>
+						<!-- <rect tab_key="Map">
+							<texture depth="2" pos="450,-325" width="640" height="640" pivot="center" texture="@http://139.99.130.200:5202/static/img/ingamemap.png"/>
+						</rect> -->
 
 					</rect>
 
