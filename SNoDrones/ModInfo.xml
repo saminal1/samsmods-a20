@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Sam's No Drones" />
+		<Description value="Removes recipes, quest rewards and loot for drones - for until the bugs are fixed." />
+		<Author value="Saminal" />
+		<Version value="20.4.0" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+	</ModInfo>
+</xml>

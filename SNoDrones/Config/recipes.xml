@@ -1,0 +1,11 @@
+<!--
+Sam's No Drones
+v20.4.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+	<remove xpath="recipes/recipe[contains(@name, 'Drone')]" />
+</configs>

@@ -1,0 +1,13 @@
+<!--
+Sam's No Drones
+v20.4.0
+by saminal
+
+traders.xml
+-->
+
+<configs>
+	<remove xpath="traders/trader_item_groups/trader_item_group[@name='rareBooks']/item[contains(@name, 'Drone')]" />
+	<remove xpath="traders/trader_item_groups/trader_item_group[@name='weaponsGunsT3']/item[contains(@name, 'Drone')]" />
+	<remove xpath="traders/trader_item_groups/trader_item_group[@name='weaponsGunsT3QL5']/item[contains(@name, 'Drone')]" />
+</configs>

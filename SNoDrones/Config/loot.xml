@@ -1,0 +1,11 @@
+<!--
+Sam's No Drones
+v20.4.0
+by saminal
+
+loot.xml
+-->
+
+<configs>
+	<remove xpath="lootcontainers/lootgroup/item[contains(@name, 'Drone')]" />
+</configs>
